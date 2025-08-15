@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic SEO Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Skyrim Console Commands | All Cheat Codes, Item IDs & Perks</title>
+<meta name="description" content="The complete guide to Skyrim console commands, item IDs, perks, skills, cheat codes, and tips. Instantly copy and use every command in-game.">
+<meta name="keywords" content="Skyrim, console commands, Skyrim cheats, Skyrim item IDs, Skyrim perk IDs, Skyrim skills, Skyrim codes, Skyrim guide, Skyrim cheat codes, Skyrim tips, Bethesda, RPG, PC gaming, video game guide">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://darkswashed.github.io/skyrim-console-commands/">
+<meta property="og:title" content="Skyrim Console Commands | All Cheat Codes, Item IDs & Perks">
+<meta property="og:description" content="The complete guide to Skyrim console commands, item IDs, perks, skills, cheat codes, and tips. Instantly copy and use every command in-game.">
+<meta property="og:image" content="https://darkswashed.github.io/skyrim-console-commands/logo.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skyrim Console Commands | All Cheat Codes, Item IDs & Perks">
+<meta name="twitter:description" content="The complete guide to Skyrim console commands, item IDs, perks, skills, cheat codes, and tips. Instantly copy and use every command in-game.">
+<meta name="twitter:image" content="https://darkswashed.github.io/skyrim-console-commands/logo.jpg">
+
+<!-- Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- Author -->
+<meta name="author" content="Swashed">
+
+<!-- Structured Data: FAQ & Breadcrumbs for Google rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I use Skyrim console commands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the console with the tilde (~) key, then type or paste your command. Some commands require targeting an object or NPC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best Skyrim cheat codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular cheats include god mode (tgm), no-clip (tcl), add gold (player.additem 0000000f 999), teleport (coc \"Location\"), and more. See the full list below!"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"Home",
+      "item":"https://darkswashed.github.io/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Skyrim Console Commands",
+      "item":"https://darkswashed.github.io/skyrim-console-commands/"
+    }
+  ]
+}
+</script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #22231b;
+    color: #e6eef6;
+    padding: 20px;
+  }
+  h1, h2 {
+    border-bottom: 1px solid #3a392c;
+    padding-bottom: 6px;
+    margin-top: 30px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.04);
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: background 0.18s;
+  }
+  .row:hover {
+    background: rgba(255,255,255,0.13);
+  }
+  button.copy-btn {
+    background: #b9a065;
+    border: none;
+    color: #272015;
+    padding: 6px 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    flex-shrink: 0;
+    user-select: none;
+    transition: background 0.2s;
+    position: relative;
+  }
+  button.copy-btn:hover {
+    background: #e6c375;
+  }
+  input.cmd {
+    background: transparent;
+    border: none;
+    color: #f0e1a0;
+    font-family: monospace;
+    font-size: 13px;
+    flex: 0 0 280px;
+    outline: none;
+    user-select: text;
+  }
+  .label {
+    color: #a8b2a1;
+    font-size: 13px;
+    user-select: none;
+    margin-left: 10px;
+    text-align: left;
+    flex-shrink: 0;
+  }
+  #nav-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #2b2b22;
+    padding: 14px 10px 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 26px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  #nav-sections a {
+    color: #b9a065;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 5px;
+    transition: background 0.2s;
+    font-size: 15px;
+  }
+  #nav-sections a:hover, #nav-sections a.active {
+    background: #e6c375;
+    color: #22231b;
+  }
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: #b9a065;
+    color: #272015;
+    border: none;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 99;
+    box-shadow: 0 2px 10px 0 #0006;
+    transition: background 0.2s;
+  }
+  #back-to-top:hover {
+    background: #e6c375;
+  }
+  #copy-notification {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    background: #b9a065;
+    color: #272015;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 2px 12px 0 #0008;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  #copy-notification.show {
+    display: block;
+    opacity: 1;
+  }
+  #custom-message-section {
+    margin-top: 22px;
+    background: #363624;
+    border-radius: 8px;
+    padding: 16px 14px;
+    color: #f0e1a0;
+    font-size: 16px;
+    font-family: inherit;
+    box-shadow: 0 2px 10px #0003;
+    border: 1px solid #3a392c;
+  }
+  #custom-message-section strong {
+    color: #b9a065;
+    font-size: 17px;
+  }
+  /* Hamburger Styles */
+  #nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #b9a065;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    z-index: 20;
+  }
+  @media (max-width: 900px) {
+    #nav-sections {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: visible;
+      gap: 0;
+      padding-top: 14px;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: #363624 #2b2b22;
+    }
+    #nav-sections::-webkit-scrollbar {
+      height: 7px;
+      background: #2b2b22;
+    }
+    #nav-sections::-webkit-scrollbar-thumb {
+      background: #3a392c;
+      border-radius: 7px;
+    }
+  }
+  @media (max-width: 600px) {
+    #nav-toggle {
+      display: block;
+    }
+    #nav-sections {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #22231bf2;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 10px 28px #0003;
+      margin: 0;
+      padding: 76px 8px 16px 8px;
+      z-index: 100;
+      max-height: 90vh;
+      overflow-y: auto;
+      gap: 0;
+    }
+    #nav-sections.open {
+      display: flex;
+    }
+    #nav-sections a {
+      padding: 14px 10px;
+      font-size: 18px;
+      border-radius: 7px;
+      margin: 3px 0;
+    }
+    body.nav-open {
+      overflow: hidden;
+      touch-action: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Skyrim Console Commands</h1>
+<button id="nav-toggle" aria-label="Open navigation menu">&#9776;</button>
+<nav id="nav-sections"></nav>
+
+<section id="custom-message-section">
+  <strong>Tip:</strong> Some commands require targeting an NPC or object. Open the console, then use your mouse to click the NPC or object to select it, then enter your command.
+</section>
+
+<div id="container"></div>
+<button id="back-to-top" title="Back to top">&#8679;</button>
+<div id="copy-notification">Command copied!</div>
+
+<script>
+// ----- Skyrim Console Commands Data -----
+const sections = {
+  "General Cheats": [
+    ["tgm", "Toggles God mode (Invincibility, infinite carry weight)"],
+    ["tcl", "Toggles No-clip mode (Fly, walk through walls)"],
+    ["coc \"Location\"", "Teleports you to that location. 'coc QASmoke' is the all item room."],
+    ["psb", "Give all spells to player"],
+    ["player.advlevel", "Force a Level Up (No perk points added)"],
+    ["caqs", "Complete all Quest Stages, Achievements."],
+    ["tmm 1", "Unlock all Map Markers"],
+    ["tfc", "Free camera"],
+    ["saq", "Start all quests (Warning: Not a good idea!)"],
+    ["qqq", "Quit the game"],
+    ["coc qasmoke", "Testing hall (You'll have your items, enchanted items may crash game)"],
+    ["player.additem <BaseID> ###", "Add item by item code (XXXXXXXX), ### is amount"],
+    ["player.additem f 999", "Add 999 Gold"],
+    ["player.additem a 100", "Add 100 Lockpicks"],
+    ["player.placeatme <BaseID>", "Place NPC or Item at base of player using BaseID"],
+    ["player.addperk <PerkID>", "Add perks by perk code (must have skill level) SEE PERKS SECTION"],
+    ["showracemenu", "Brings up race/character customization (resets to level 1!)"]
+  ],
+  "Player Attributes & Skills": [
+    ["fov XXX", "Change field of view."],
+    ["advancepclevel", "Increase your Level without adding perk points"],
+    ["advancepcskill (skillname) X", "Add experience to a particular skill. See advskill section for all commands."],
+    ["advskill [[[skill]]] XXX", "Increase targeted skill by XXX amount"],
+    ["player.modav carryweight X", "Add to max Carry Weight"],
+    ["player.modav burden X", "Increase Burden by X"],
+    ["player.modav Dragonsouls X", "Add Dragon's Souls to your pool for shouts."],
+    ["player.setav speedmult X", "Increase movement speed (percent multiplier)"],
+    ["player.setav Stamina X", "Set Stamina"],
+    ["player.setav Health X", "Set health"],
+    ["player.setcrimegold X", "Set to 0 for free"],
+    ["player.setav Magicka X", "Set Magicka"],
+    ["player.setlevel X", "Set Level"],
+    ["player.placeatme X", "Spawn NPC at your location (X is NPC ID)"],
+    ["player.setscale X", "Change scale of player; X=1 is normal"],
+    ["player.IncPCS [Skill Name]", "Increase the level of targeted Skill by one."]
+  ],
+  "AI & World Toggles": [
+    ["tai", "Toggle Artificial Intelligence (Freezes enemies)"],
+    ["tcai", "Toggle Combat Artificial Intelligence (Freezes enemies)"],
+    ["tg", "Toggle grass"],
+    ["tm", "Toggle menus, HUD"],
+    ["tfow", "Toggle FOW"]
+  ],
+  "NPC & Object Actions": [
+    ["kill", "Kill targeted thing"],
+    ["resurrect", "Resurrects targeted thing"],
+    ["unlock", "Unlocks targeted locked thing"],
+    ["lock X", "Lock targeted chests, doors or even people, where X is the difficulty level (0-100)"],
+    ["killall", "Kill all nearby enemies"],
+    ["removeallitems", "Removes all items of targeted NPC"],
+    ["movetoqt", "Teleport to quest target"],
+    ["enableplayercontrols", "Enable controls during cinematics"],
+    ["tdetect", "Toggle AI Detection (Avoid getting caught stealing)"],
+    ["setownership", "Changes ownership of target so you can steal it"],
+    ["duplicateallitems", "Duplicate items (Target container/NPC and copy the RefID)"]
+  ],
+  "Ingredient Item Codes": [
+    ["player.additem 00106E1B", "Abecean Longfin"],
+    ["player.additem 0006BC02", "Bear Claws"],
+    ["player.additem 000A9195", "Bee"],
+    ["player.additem 000A9191", "Beehive Husk"],
+    ["player.additem 000705B7", "Berit's Ashes"],
+    ["player.additem 0004DA20", "Bleeding Crown"],
+    ["player.additem 0004DA25", "Blisterwort"],
+    ["player.additem 000727DE", "Blue Butterfly Wing"],
+    ["player.additem 000E4F0C", "Blue Dartwing"],
+    ["player.additem 00077E1C", "Blue Mountain Flower"],
+    ["player.additem 00034CDD", "Bone Meal"],
+    ["player.additem 0003AD61", "Briar Heart"],
+    ["player.additem 000727E0", "Butterfly Wing"],
+    ["player.additem 0006ABCB", "Canis Root"],
+    ["player.additem 00052695", "Charred Skeever Hide"],
+    ["player.additem 0003AD56", "Chaurus Eggs"],
+    ["player.additem 00023D77", "Chicken's Egg"],
+    ["player.additem 000B2183", "Creep Cluster"],
+    ["player.additem 000B701A", "Crimson Nirnroot"],
+    ["player.additem 00106E19", "Cyrodilic Spadetail"],
+    ["player.additem 0003AD5B", "Daedra Heart"],
+    ["player.additem 000516C8", "Deathbell"],
+    ["player.additem 000889A2", "Dragon's Tongue"],
+    ["player.additem 000F11C0", "Dwarven Oil"],
+    ["player.additem 0003AD63", "Ectoplasm"],
+    ["player.additem 00034D31", "Elves Ear"],
+    ["player.additem 0006BC07", "Eye of Sabre Cat"],
+    ["player.additem 0003AD5D", "Falmer Ear"],
+    ["player.additem 0003AD60", "Fine-Cut Void Salts"],
+    ["player.additem 0010757A", "Fine-Cut Void Salts (message)"],
+    ["player.additem 0003AD5E", "Fire Salts"],
+    ["player.additem 0004DA00", "Fly Amanita"],
+    ["player.additem 00034D32", "Frost Mirriam"],
+    ["player.additem 0003AD5F", "Frost Salts"],
+    ["player.additem 00034D22", "Garlic"],
+    ["player.additem 0007E8C1", "Giant Lichen"],
+    ["player.additem 0003AD64", "Giant's Toe"],
+    ["player.additem 0003AD73", "Glow Dust"],
+    ["player.additem 0007EE01", "Glowing Mushroom"],
+    ["player.additem 00083E64", "Grass Pod"],
+    ["player.additem 0006B689", "Hagraven Claw"],
+    ["player.additem 0003AD66", "Hagraven Feathers"],
+    ["player.additem 00057F91", "Hanging Moss"],
+    ["player.additem 000E7EBC", "Hawk Beak"],
+    ["player.additem 000E7ED0", "Hawk Feathers"],
+    ["player.additem 00106E18", "Histcarp"],
+    ["player.additem 000B08C5", "Honeycomb"],
+    ["player.additem 001016B3", "Human Flesh"],
+    ["player.additem 000B18CD", "Human Heart"],
+    ["player.additem 0003AD6A", "Ice Wraith Teeth"],
+    ["player.additem 0004DA23", "Imp Stool"],
+    ["player.additem 0001BCBC", "Jarrin Root"],
+    ["player.additem 0006AC4A", "Jazbay Grapes"],
+    ["player.additem 0005076E", "Juniper Berries"],
+    ["player.additem 0006BC0A", "Large Antlers"],
+    ["player.additem 00045C28", "Lavender"],
+    ["player.additem 000727DF", "Luna Moth Wing"],
+    ["player.additem 000D8E3F", "Moon Sugar"],
+    ["player.additem 000EC870", "Mora Tapinella"],
+    ["player.additem 0006BC00", "Mudcrab Chitin"],
+    ["player.additem 0004DA24", "Namira's Rot"],
+    ["player.additem 0002F44C", "Nightshade"],
+    ["player.additem 00059B86", "Nirnroot"],
+    ["player.additem 0007EDF5", "Nordic Barnacle"],
+    ["player.additem 000BB956", "Orange Dartwing"],
+    ["player.additem 000854FE", "Pearl"],
+    ["player.additem 00023D6F", "Pine Thrush Egg"],
+    ["player.additem 0006BC10", "Powdered Mammoth Tusk"],
+    ["player.additem 00077E1E", "Purple Mountain Flower"],
+    ["player.additem 00077E1D", "Red Mountain Flower"],
+    ["player.additem 00106E1A", "River Betty"],
+    ["player.additem 0007E8C8", "Rock Warbler Egg"],
+    ["player.additem 0006BC04", "Sabre Cat Tooth"],
+    ["player.additem 00034CDF", "Salt Pile (SaltPile)"],
+    ["player.additem 00074A19", "Salt Pile (MS03BlackBriarSecretIngredient)"],
+    ["player.additem 0006F950", "Scaly Pholiota"],
+    ["player.additem 00106E1C", "Silverside Perch"],
+    ["player.additem 0003AD6F", "Skeever Tail"],
+    ["player.additem 0007E8C5", "Slaughterfish Egg"],
+    ["player.additem 0003AD70", "Slaughterfish Scales"],
+    ["player.additem 0006BC0B", "Small Antlers"],
+    ["player.additem 00085500", "Small Pearl"],
+    ["player.additem 0001B3BD", "Snowberries"],
+    ["player.additem 0009151B", "Spider Egg"],
+    ["player.additem 00063B5F", "Spriggan Sap"],
+    ["player.additem 0007E8B7", "Swamp Fungal Pod"],
+    ["player.additem 0003AD71", "Taproot"],
+    ["player.additem 000134AA", "Thistle Branch"],
+    ["player.additem 0004DA73", "Torchbug Thorax"],
+    ["player.additem 0003AD72", "Troll Fat"],
+    ["player.additem 0003F7F8", "Tundra Cotton"],
+    ["player.additem 0003AD76", "Vampire Dust"],
+    ["player.additem 0003AD60", "Void Salts"],
+    ["player.additem 0004B0BA", "Wheat"],
+    ["player.additem 0004DA22", "White Cap"],
+    ["player.additem 0006BC0E", "Wisp Wrappings"],
+
+    // Hearthfire
+    ["player.additem xx00f1cc", "Hawk's Egg [Hearthfire]"],
+    ["player.additem xx003545", "Salmon Roe [Hearthfire]"],
+
+    // Dawnguard
+    ["player.additem xx0059ba", "Ancestor Moth Wing [Dawnguard]"],
+    ["player.additem xx0183b7", "Chaurus Hunter Antennae [Dawnguard]"],
+    ["player.additem xx00b097", "Gleamblossom [Dawnguard]"],
+    ["player.additem xx0185fb", "Poison Bloom [Dawnguard]"],
+    ["player.additem xx002a78", "Yellow Mountain Flower [Dawnguard]"],
+
+    // Dragonborn
+    ["player.additem xx01cd74", "Ash Creep Cluster [Dragonborn]"],
+    ["player.additem xx01cd71", "Ash Hopper Jelly [Dragonborn]"],
+    ["player.additem xx016e26", "Ashen Grass Pod [Dragonborn]"],
+    ["player.additem xx01cd6f", "Boar Tusk [Dragonborn]"],
+    ["player.additem xx01cd6e", "Burnt Spriggan Wood [Dragonborn]"],
+    ["player.additem xx01ff75", "Emperor Parasol Moss [Dragonborn]"],
+    ["player.additem xx03cd8e", "Felsaad Tern Feathers [Dragonborn]"],
+    ["player.additem xx01cd72", "Netch Jelly [Dragonborn]"],
+    ["player.additem xx017e97", "Scathecraw [Dragonborn]"],
+    ["player.additem xx01cd6d", "Spawn Ash [Dragonborn]"],
+    ["player.additem xx017008", "Trama Root [Dragonborn]"]
+  ],
+  "Heavy Armor Item Codes": [
+    // Iron Armor
+    ["player.additem 00012E49", "Iron Armor"],
+    ["player.additem 00012E4B", "Iron Boots"],
+    ["player.additem 00012E46", "Iron Gauntlets"],
+    ["player.additem 00012E4D", "Iron Helmet"],
+    ["player.additem 00012EB6", "Iron Shield"],
+    ["player.additem 00013948", "Banded Iron Armor"],
+    ["player.additem 0001394B", "Banded Iron Shield"],
+
+    // Steel Armor
+    ["player.additem 00013952", "Steel Armor"],
+    ["player.additem 00013951", "Steel Cuffed Boots"],
+    ["player.additem 000F6F21", "Steel Shin Boots"],
+    ["player.additem 00013954", "Steel Helmet"],
+    ["player.additem 000F6F24", "Steel Horned Helmet"],
+    ["player.additem 00013953", "Steel Nordic Gauntlets"],
+    ["player.additem 000F6F23", "Steel Imperial Gauntlets"],
+    ["player.additem 00013955", "Steel Shield"],
+
+    // Steel Plate Armor
+    ["player.additem 0001395C", "Steel Plate Armor"],
+    ["player.additem 0001395B", "Steel Plate Boots"],
+    ["player.additem 0001395D", "Steel Plate Gauntlets"],
+    ["player.additem 0001395E", "Steel Plate Helmet"],
+
+    // Imperial Armor
+    ["player.additem 000136D5", "Imperial Armor"],
+    ["player.additem 000136D6", "Imperial Boots"],
+    ["player.additem 000136D4", "Imperial Bracers"],
+    ["player.additem 00013EDC", "Imperial Helmet"],
+    ["player.additem 000135BA", "Imperial Shield"],
+    ["player.additem 000136CF", "Imperial Officer's Helmet"],
+    ["player.additem 0009610D", "Imperial Helmet (Closed)"],
+
+    // Ancient Nord Armor
+    ["player.additem 00018388", "Ancient Nord Armor"],
+    ["player.additem 00056A9D", "Ancient Nord Boots"],
+    ["player.additem 00056B17", "Ancient Nord Gauntlets"],
+    ["player.additem 00056A9E", "Ancient Nord Helmet"],
+
+    // Dwarven Armor
+    ["player.additem 0001394D", "Dwarven Armor"],
+    ["player.additem 0001394C", "Dwarven Boots"],
+    ["player.additem 0001394E", "Dwarven Gauntlets"],
+    ["player.additem 0001394F", "Dwarven Helmet"],
+    ["player.additem 00013950", "Dwarven Shield"],
+
+    // Orcish Armor
+    ["player.additem 00013957", "Orcish Armor"],
+    ["player.additem 00013956", "Orcish Boots"],
+    ["player.additem 00013958", "Orcish Gauntlets"],
+    ["player.additem 00013959", "Orcish Helmet"],
+    ["player.additem 00013946", "Orcish Shield"],
+
+    // Ebony Armor
+    ["player.additem 00013961", "Ebony Armor"],
+    ["player.additem 00013960", "Ebony Boots"],
+    ["player.additem 00013962", "Ebony Gauntlets"],
+    ["player.additem 00013963", "Ebony Helmet"],
+    ["player.additem 00013964", "Ebony Shield"],
+
+    // Dragonplate Armor
+    ["player.additem 00013966", "Dragonplate Armor"],
+    ["player.additem 00013965", "Dragonplate Boots"],
+    ["player.additem 00013967", "Dragonplate Gauntlets"],
+    ["player.additem 00013969", "Dragonplate Helmet"],
+    ["player.additem 00013968", "Dragonplate Shield"],
+
+    // Daedric Armor
+    ["player.additem 0001396B", "Daedric Armor"],
+    ["player.additem 0001396A", "Daedric Boots"],
+    ["player.additem 0001396C", "Daedric Gauntlets"],
+    ["player.additem 0001396D", "Daedric Helmet"],
+    ["player.additem 0001396E", "Daedric Shield"],
+
+    // Chitin Heavy Armor (Dragonborn)
+    ["player.additem xx01cd8a", "Chitin Heavy Armor [DR]"],
+    ["player.additem xx01cd82", "Chitin Heavy Boots [DR]"],
+    ["player.additem xx01cd8b", "Chitin Heavy Gauntlets [DR]"],
+    ["player.additem xx01cd8c", "Chitin Heavy Helmet [DR]"],
+
+    // Bonemold Armor (Dragonborn)
+    ["player.additem xx01cd93", "Bonemold Armor [DR]"],
+    ["player.additem xx037564", "Bonemold Guard Armor [DR]"],
+    ["player.additem xx037563", "Bonemold Pauldron Armor [DR]"],
+    ["player.additem xx01cd92", "Bonemold Boots [DR]"],
+    ["player.additem xx01cd94", "Bonemold Gauntlets [DR]"],
+    ["player.additem xx01cd95", "Bonemold Helmet [DR]"],
+    ["player.additem xx026234", "Bonemold Shield [DR]"],
+    ["player.additem xx03ab26", "Improved Bonemold Armor [DR]"],
+    ["player.additem xx03ab25", "Improved Bonemold Boots [DR]"],
+    ["player.additem xx03ab22", "Improved Bonemold Gauntlets [DR]"],
+    ["player.additem xx03ab23", "Improved Bonemold Helmet [DR]"],
+    ["player.additem xx03ab24", "Improved Bonemold Shield [DR]"],
+
+    // Nordic Carved Armor (Dragonborn)
+    ["player.additem xx01cd97", "Nordic Carved Armor [DR]"],
+    ["player.additem xx01cd96", "Nordic Carved Boots [DR]"],
+    ["player.additem xx01cd98", "Nordic Carved Gauntlets [DR]"],
+    ["player.additem xx01cd99", "Nordic Carved Helmet [DR]"],
+    ["player.additem xx026236", "Nordic Shield [DR]"],
+
+    // Stalhrim Armor (Dragonborn)
+    ["player.additem xx01cd9f", "Stalhrim Armor [DR]"],
+    ["player.additem xx01cd9e", "Stalhrim Boots [DR]"],
+    ["player.additem xx01cda0", "Stalhrim Gauntlets [DR]"],
+    ["player.additem xx01cda1", "Stalhrim Helm [DR]"],
+
+    // Shellbug Armor (Dawnguard)
+    ["player.additem xx012e8a", "Shellbug Helmet [DG]"],
+
+    // Blades Armor
+    ["player.additem 0004B28B", "Blades Armor"],
+    ["player.additem 0004B288", "Blades Boots"],
+    ["player.additem 0004B28D", "Blades Gauntlets"],
+    ["player.additem 0004B28F", "Blades Helmet"],
+    ["player.additem 0004F912", "Blades Shield"],
+
+    // Falmer Armor
+    ["player.additem 000B83CB", "Falmer Armor"],
+    ["player.additem 000B83CD", "Falmer Boots"],
+    ["player.additem 000B83CF", "Falmer Gauntlets"],
+    ["player.additem 0004C3CB", "Falmer Helmet"],
+    ["player.additem 0005C06C", "Falmer Shield"],
+
+    // Wolf Armor
+    ["player.additem 000CAE15", "Wolf Armor"],
+    ["player.additem 000CEE7C", "Wolf Boots"],
+    ["player.additem 000CEE7E", "Wolf Gauntlets"],
+    ["player.additem 0004C3D0", "Wolf Helmet"],
+
+    // Ahzidal's Armor (Dragonborn)
+    ["player.additem xx01db97", "Ahzidal's Armor of Retribution [DR]"],
+    ["player.additem xx01c655", "Ahzidal's Boots of Waterwalking [DR]"],
+    ["player.additem xx01db99", "Ahzidal's Gauntlets of Warding [DR]"],
+    ["player.additem xx01db98", "Ahzidal's Helm of Vision [DR]"],
+
+    // Dawnguard Heavy Armor
+    ["player.additem xx00f3f7", "Dawnguard Heavy Armor (Brown) [DG]"],
+    ["player.additem xx00f3fa", "Dawnguard Heavy Armor (Gray) [DG]"],
+    ["player.additem xx014757", "Dawnguard Heavy Boots [DG]"],
+    ["player.additem xx014758", "Dawnguard Heavy Gauntlets [DG]"],
+    ["player.additem xx0050d0", "Dawnguard Full Helmet [DG]"],
+    ["player.additem xx0150b8", "Dawnguard Shield [DG]"],
+
+    // Falmer Hardened Armor (Dawnguard)
+    ["player.additem xx00e8de", "Falmer Hardened Armor [DG]"],
+    ["player.additem xx00e8dd", "Falmer Hardened Boots [DG]"],
+    ["player.additem xx00e8df", "Falmer Hardened Gauntlets [DG]"],
+    ["player.additem xx00e8e0", "Falmer Hardened Helm [DG]"],
+
+    // Falmer Heavy Armor (Dawnguard)
+    ["player.additem xx0023e9", "Falmer Heavy Armor [DG]"],
+    ["player.additem xx0023ef", "Falmer Heavy Boots [DG]"],
+    ["player.additem xx0023ed", "Falmer Heavy Gauntlets [DG]"],
+    ["player.additem xx0023eb", "Falmer Heavy Helm [DG]"],
+
+    // Dragon Priest Masks
+    ["player.additem 00061CC1", "Hevnoraak Mask"],
+    ["player.additem 00061CD6", "Konahrik Mask"],
+    ["player.additem 00061CA5", "Nahkriin Mask"],
+    ["player.additem 00061CC2", "Otar Mask"],
+    ["player.additem 00061CC0", "Rahgot Mask"],
+    ["player.additem 00061CC9", "Vokun Mask"],
+    ["player.additem xx0240fe", "Ahzidal Mask [DR]"],
+    ["player.additem xx0240ff", "Dukaan Mask [DR]"],
+    ["player.additem xx039fa1", "Miraak Mask (1–44) [DR]"],
+    ["player.additem xx039fa2", "Miraak Mask (45–59) [DR]"],
+    ["player.additem xx039fa3", "Miraak Mask (60+) [DR]"],
+    ["player.additem xx024037", "Zahkriisos Mask [DR]"],
+
+    // Artifacts
+    ["player.additem 000F494E", "Ancient Helmet of the Unburned"],
+    ["player.additem 00052794", "Ebony Mail"],
+    ["player.additem 0005CBFE", "General Tullius' Armor"],
+    ["player.additem 000295F3", "Helm of Yngol"],
+    ["player.additem 000940D5", "Helm of Winterhold"],
+    ["player.additem 000D2846", "Masque of Clavcus Vile"],
+    ["player.additem 000E41D8", "Shield of Ysgramor"],
+    ["player.additem 00045F96", "Spellbreaker"],
+    ["player.additem 000FC5BF", "Targe of the Blooded"],
+    ["player.additem 000DA750", "The Jagged Crown"],
+    ["player.additem xx005759", "Aetherial Shield [DG]"],
+    ["player.additem xx00284d", "Auriel's Shield [DG]"],
+    ["player.additem xx037b88", "Cultist Mask [DR]"],
+    ["player.additem xx03399c", "Dented Iron Shield [DR]"],
+    ["player.additem xx038add", "Visage of Mzund [DR]"]
+  ],
+  "Light Armor Item Codes": [
+    // Hide Armor
+    ["player.additem 00013911", "Hide Armor"],
+    ["player.additem 00013910", "Hide Boots"],
+    ["player.additem 00013912", "Hide Bracers"],
+    ["player.additem 00013913", "Hide Helmet"],
+    ["player.additem 00013914", "Hide Shield"],
+
+    // Imperial Light Armor
+    ["player.additem 00013ED9", "Imperial Light Armor"],
+    ["player.additem 00013ED7", "Imperial Light Boots"],
+    ["player.additem 00013EDA", "Imperial Light Bracers"],
+    ["player.additem 00013EDB", "Imperial Light Helmet"],
+    ["player.additem 00013AB2", "Imperial Light Shield"],
+
+    // Leather Armor
+    ["player.additem 0003619E", "Leather Armor"],
+    ["player.additem 00013920", "Leather Boots"],
+    ["player.additem 00013921", "Leather Bracers"],
+    ["player.additem 00013922", "Leather Helmet"],
+
+    // Scaled Armor
+    ["player.additem 0001B3A3", "Scaled Armor"],
+    ["player.additem 0001B39F", "Scaled Boots"],
+    ["player.additem 0001B3A0", "Scaled Bracers"],
+    ["player.additem 0001B3A1", "Scaled Helmet"],
+    ["player.additem 0001B3A2", "Studded Armor"],
+    ["player.additem 0001B3A4", "Scaled Horn Armor"],
+
+    // Elven Armor
+    ["player.additem 000896A3", "Elven Armor"],
+    ["player.additem 0001391A", "Elven Boots"],
+    ["player.additem 0001391C", "Elven Gauntlets"],
+    ["player.additem 0001392A", "Elven Gilded Armor"],
+    ["player.additem 0001391D", "Elven Helmet"],
+    ["player.additem 0001391E", "Elven Shield"],
+
+    // Glass Armor
+    ["player.additem 00013939", "Glass Armor"],
+    ["player.additem 00013938", "Glass Boots"],
+    ["player.additem 0001393A", "Glass Gauntlets"],
+    ["player.additem 0001393B", "Glass Helmet"],
+    ["player.additem 0001393C", "Glass Shield"],
+
+    // Dragonscale Armor
+    ["player.additem 0001393E", "Dragonscale Armor"],
+    ["player.additem 0001393D", "Dragonscale Boots"],
+    ["player.additem 0001393F", "Dragonscale Gauntlets"],
+    ["player.additem 00013940", "Dragonscale Helmet"],
+    ["player.additem 00013941", "Dragonscale Shield"],
+
+    // Chitin Armor (Dragonborn)
+    ["player.additem xx01cd87", "Chitin Armor [DR]"],
+    ["player.additem xx01cd86", "Chitin Boots [DR]"],
+    ["player.additem xx01cd88", "Chitin Bracers [DR]"],
+    ["player.additem xx01cd89", "Chitin Helmet [DR]"],
+    ["player.additem xx026235", "Chitin Shield [DR]"],
+
+    // Stalhrim Light Armor (Dragonborn)
+    ["player.additem xx01cda2", "Stalhrim Light Armor [DR]"],
+    ["player.additem xx01cd7e", "Stalhrim Light Boots [DR]"],
+    ["player.additem xx01cda5", "Stalhrim Light Bracers [DR]"],
+    ["player.additem xx01cda3", "Stalhrim Light Helmet [DR]"],
+    ["player.additem xx026237", "Stalhrim Shield [DR]"],
+
+    // Fur Armor
+    ["player.additem 0006F393", "Fur Armor"],
+    ["player.additem 0010594B", "Fur Armor (variant)"],
+    ["player.additem 0010594D", "Fur Armor (variant)"],
+    ["player.additem 0010594F", "Fur Armor (variant)"],
+    ["player.additem 000A6D7F", "Fur Boots"],
+    ["player.additem 0006F398", "Fur Shoes"],
+    ["player.additem 000A6D7D", "Fur Gauntlets"],
+    ["player.additem 0006F39B", "Fur Bracers"],
+    ["player.additem 0006F39E", "Fur Helmet"],
+
+    // Nightingale Armor
+    ["player.additem 0005DB86", "Nightingale Armor (1–18)"],
+    ["player.additem 000FCC0E", "Nightingale Armor (19–31)"],
+    ["player.additem 000FCC0F", "Nightingale Armor (32+)"],
+    ["player.additem 000FCC0C", "Nightingale Boots (1–18)"],
+    ["player.additem 0005DB85", "Nightingale Boots (19–31)"],
+    ["player.additem 000FCC0D", "Nightingale Boots (32+)"],
+    ["player.additem 0005DB87", "Nightingale Gloves (1–18)"],
+    ["player.additem 000FCC10", "Nightingale Gloves (19–31)"],
+    ["player.additem 000FCC11", "Nightingale Gloves (32+)"],
+    ["player.additem 0005DB88", "Nightingale Hood (1–18)"],
+    ["player.additem 000FCC13", "Nightingale Hood (19–31)"],
+    ["player.additem 000FCC12", "Nightingale Hood (32+)"],
+
+    // Penitus Oculatus Armor
+    ["player.additem 000D3EA0", "Penitus Oculatus Armor"],
+    ["player.additem 000D3EA7", "Penitus Oculatus Boots"],
+    ["player.additem 000D3EAB", "Penitus Oculatus Bracers"],
+    ["player.additem 000D3EAA", "Penitus Oculatus Helmet"],
+
+    // Shrouded Armor
+    ["player.additem 00D2844", "Shrouded Armor"],
+    ["player.additem 0005ABC3", "Shrouded Armor (ALT.)"],
+    ["player.additem 000D2845", "Shrouded Boots"],
+    ["player.additem 0005ABC4", "Shrouded Cowl Maskless"],
+    ["player.additem 000D2842", "Shrouded Cowl"],
+    ["player.additem 000D2843", "Shrouded Gloves"],
+
+    // Thieves Guild Armor
+    ["player.additem 000D3AC3", "Thieves Guild Armor"],
+    ["player.additem 000D3AC2", "Thieves Guild Boots"],
+    ["player.additem 000D3AC4", "Thieves Guild Gloves"],
+    ["player.additem 000D3AC5", "Thieves Guild Hood"],
+
+    // Forsworn Armor
+    ["player.additem 000D8D50", "Forsworn Armor"],
+    ["player.additem 000D8D4E", "Forsworn Boots"],
+    ["player.additem 000D8D52", "Forsworn Headdress"],
+    ["player.additem 000D8D55", "Forsworn Gauntlets"],
+
+    // Stormcloak Armor
+    ["player.additem 000A6D7B", "Stormcloak Cuirass"],
+    ["player.additem 000A6D79", "Stormcloak Helmet"],
+
+    // Stormcloak Officer Armor
+    ["player.additem 0008697E", "Stormcloak Officer Armor"],
+    ["player.additem 00086981", "Stormcloak Officer Boots"],
+    ["player.additem 00086983", "Stormcloak Officer Bracers"],
+    ["player.additem 00086985", "Stormcloak Officer Helmet"],
+
+    // Linwe's Armor Set
+    ["player.additem 00108544", "Linwe's Armor"],
+    ["player.additem 00108543", "Linwe's Boots"],
+    ["player.additem 00108545", "Linwe's Gloves"],
+    ["player.additem 00108546", "Linwe's Hood"],
+
+    // Armor of the Old Gods
+    ["player.additem 000EAFD0", "Armor of the Old Gods"],
+    ["player.additem 000EAFD3", "Boots of the Old Gods"],
+    ["player.additem 000EAFD2", "Gauntlets of the Old Gods"],
+    ["player.additem 000EAFD1", "Helmet of the Old Gods"],
+
+    // Ancient Shrouded Armor
+    ["player.additem 000E1F15", "Ancient Shrouded Armor"],
+    ["player.additem 000E1F14", "Ancient Shrouded Boots"],
+    ["player.additem 000E1F17", "Ancient Shrouded Cowl"],
+    ["player.additem 000E1F16", "Ancient Shrouded Gloves"],
+
+    // Worn Shrouded Armor
+    ["player.additem 0010EB5B", "Worn Shrouded Armor"],
+    ["player.additem 0010EB5C", "Worn Shrouded Boots"],
+    ["player.additem 0010EB5D", "Worn Shrouded Cowl"],
+    ["player.additem 0010EB5E", "Worn Shrouded Gloves"],
+
+    // Guild Master's Armor Set
+    ["player.additem 000D3ACC", "Guild Master's Armor"],
+    ["player.additem 000D3ACB", "Guild Master's Boots"],
+    ["player.additem 000D3ACD", "Guild Master's Gloves"],
+    ["player.additem 000D3ACE", "Guild Master's Hood"],
+
+    // Hold Guard Armor
+    ["player.additem 0002151E", "Falkreath Guard's Armor"],
+    ["player.additem 00021520", "Hjaalmarch Guard's Armor"],
+    ["player.additem 00021508", "Markarth Guard's Armor"],
+    ["player.additem 00021525", "Pale Guard's Armor"],
+    ["player.additem 00021507", "Riften Guard's Armor"],
+    ["player.additem 000C7F5B", "Solitude Guard's Armor"],
+    ["player.additem 0002150D", "Whiterun Guard's Armor"],
+    ["player.additem 00021522", "Winterhold Guard's Armor"],
+    ["player.additem 00013ED8", "Studded Imperial Armor"],
+
+    // Ancient Falmer Armor (Dawnguard)
+    ["player.additem xx00c815", "Ancient Falmer Boots [DG]"],
+    ["player.additem xx00c814", "Ancient Falmer Crown [DG]"],
+    ["player.additem xx00c816", "Ancient Falmer Cuirass [DG]"],
+    ["player.additem xx00c817", "Ancient Falmer Gauntlets [DG]"],
+
+    // Dawnguard Armor (Dawnguard)
+    ["player.additem xx00f3fb", "Dawnguard Armor (Red) [DG]"],
+    ["player.additem xx00f402", "Dawnguard Armor (Grey) [DG]"],
+    ["player.additem xx00f404", "Dawnguard Armor (Brown) [DG]"],
+    ["player.additem xx00f400", "Dawnguard Boots [DG]"],
+    ["player.additem xx00f3fe", "Dawnguard Gauntlets [DG]"],
+    ["player.additem xx01989e", "Dawnguard Helmet [DG]"],
+
+    // Vampire Armor (Dawnguard)
+    ["player.additem xx0142c7", "Vampire Armor (Black) [DG]"],
+    ["player.additem xx0191f2", "Vampire Armor (Grey) [DG]"],
+    ["player.additem xx0191f3", "Vampire Armor (Red) [DG]"],
+    ["player.additem xx00b5de", "Vampire Boots [DG]"],
+    ["player.additem xx01a51f", "Vampire Gauntlets [DG]"],
+    ["player.additem xx00b5db", "Vampire Royal Armor [DG]"],
+
+    // Blackguard's Armor (Dragonborn)
+    ["player.additem xx02ad33", "Blackguard's Armor [DR]"],
+    ["player.additem xx02ad34", "Blackguard's Boots [DR]"],
+    ["player.additem xx02ad32", "Blackguard's Gloves [DR]"],
+    ["player.additem xx02ad31", "Blackguard's Hood [DR]"],
+
+    // Deathbrand Armor (Dragonborn)
+    ["player.additem xx02401b", "Deathbrand Armor [DR]"],
+    ["player.additem xx02401a", "Deathbrand Boots [DR]"],
+    ["player.additem xx02401c", "Deathbrand Gauntlets [DR]"],
+    ["player.additem xx02401d", "Deathbrand Helm [DR]"],
+
+    // Morag Tong Armor (Dragonborn)
+    ["player.additem xx0292ac", "Morag Tong Armor [DR]"],
+    ["player.additem xx0292ab", "Morag Tong Boots [DR]"],
+    ["player.additem xx0292ad", "Morag Tong Bracers [DR]"],
+    ["player.additem xx0292ae", "Morag Tong Hood [DR]"],
+
+    // Skaal Armor (Dragonborn)
+    ["player.additem xx039112", "Skaal Boots [DR]"],
+    ["player.additem xx03910e", "Skaal Coat [DR]"],
+    ["player.additem xx039110", "Skaal Gloves [DR]"],
+    ["player.additem xx039114", "Skaal Hat [DR]"],
+
+    // Dragon Priest Masks
+    ["player.additem 00061CB9", "Krosis Mask"],
+    ["player.additem 00061C8B", "Morokei Mask"],
+    ["player.additem 00061CAB", "Volsung Mask"],
+    ["player.additem 00061CCA", "Wooden Mask"],
+    ["player.additem xx039d2b", "Miraak Mask (1–44) [DR]"],
+    ["player.additem xx039d2e", "Miraak Mask (45–59) [DR]"],
+    ["player.additem xx039d2f", "Miraak Mask (60+) [DR]"],
+
+    // Artifacts
+    ["player.additem 000F6911", "Amulet of Articulation"],
+    ["player.additem xx011baf", "Dawnguard Rune Shield [DG]"],
+    ["player.additem 000F9904", "Diadem of the Savant"],
+    ["player.additem 0010A06A", "Gloves of the Pugilist"],
+    ["player.additem 0002AC61", "Savior's Hide"],
+    ["player.additem xx018b91", "Locket of Saint Jiub [DG]"],
+    ["player.additem xx03d2af", "Miraak's Boots [DR]"],
+    ["player.additem xx02b0f9", "Miraak's Gloves [DR]"]
+    // ["player.additem ...", "Movarth's Boots"] // No ID provided
+  ],
+  "Soul Gem Item Codes": [
+    // Empty Soul Gems
+    ["player.additem 0002E4E2", "Petty Soul Gem (Empty)"],
+    ["player.additem 0002E4E4", "Lesser Soul Gem (Empty)"],
+    ["player.additem 0002E4E6", "Common Soul Gem (Empty)"],
+    ["player.additem 0002E4F4", "Greater Soul Gem (Empty)"],
+    ["player.additem 0002E4FC", "Grand Soul Gem (Empty)"],
+    ["player.additem 0002E500", "Black Soul Gem (Empty)"],
+    ["player.additem 00043E26", "Wylandriah's Soul Gem"],
+    ["player.additem 00063B27", "Azura's Star"],
+    ["player.additem 00063B29", "The Black Star"],
+    ["player.additem 00094E40", "Treated Soul Gem"],
+
+    // Full Soul Gems
+    ["player.additem 0002E4E3", "Petty Soul Gem (Full)"],
+    ["player.additem 0002E4E5", "Lesser Soul Gem (Full)"],
+    ["player.additem 0002E4F3", "Common Soul Gem (Full)"],
+    ["player.additem 0002E4FB", "Greater Soul Gem (Full)"],
+    ["player.additem 0002E4FF", "Grand Soul Gem (Full)"],
+    ["player.additem 0002E504", "Black Soul Gem (Full)"]
+  ],
+  "Staff Item Codes": [
+    // Alteration
+    ["player.additem 000be121", "Staff of Magelight (Alteration)"],
+    ["player.additem 00029b73", "Staff of Paralysis (Alteration)"],
+
+    // Conjuration
+    ["player.additem 000a88c9", "Sild's Staff (Conjuration)"],
+    ["player.additem 00029b79", "Staff of Banishing (Conjuration)"],
+    ["player.additem 00029b7b", "Staff of Daedric Command (Conjuration)"],
+    ["player.additem 00029b7c", "Staff of Dread Zombies (Conjuration)"],
+    ["player.additem 00029b7e", "Staff of Expulsion (Conjuration)"],
+    ["player.additem 00029b76", "Staff of Reanimation (Conjuration)"],
+    ["player.additem 00029b7a", "Staff of Revenants (Conjuration)"],
+    ["player.additem 000be122", "Staff of Soul Trapping (Conjuration)"],
+    ["player.additem 00029b75", "Staff of the Familiar (Conjuration)"],
+    ["player.additem 00029b78", "Staff of the Flame Atronach (Conjuration)"],
+    ["player.additem 000be120", "Staff of the Frost Atronach (Conjuration)"],
+    ["player.additem 00029b7d", "Staff of the Storm Atronach (Conjuration)"],
+    ["player.additem 00029b74", "Staff of Zombies (Conjuration)"],
+    ["player.additem xx00575e", "Aetherial Staff (Conjuration)"],
+
+    // Destruction
+    ["player.additem 0004de5b", "Dragon Priest Staff (Wall of Lightning) (Destruction)"],
+    ["player.additem 0007e5bb", "Dragon Priest Staff (Wall of Fire) (Destruction)"],
+    ["player.additem 000b3dfa", "Eye of Melka (Destruction)"],
+    ["player.additem 000fa2c1", "Forsworn Staff (Destruction)"],
+    ["player.additem 000cc826", "Forsworn Staff (Destruction) [Alternate]"],
+    ["player.additem 0010076d", "Hevnoraak's Staff (Destruction)"],
+    ["player.additem 00029b82", "Staff of Fireballs (Destruction)"],
+    ["player.additem 0004c6ca", "Staff of Firebolts (Destruction)"],
+    ["player.additem 0004dee0", "Staff of Flames (Destruction)"],
+    ["player.additem 0004dee1", "Staff of Frostbite (Destruction)"],
+    ["player.additem 00029b84", "Staff of Chain Lightning (Destruction)"],
+    ["player.additem 0007a4fb", "Staff of Hag's Wrath (Destruction)"],
+    ["player.additem 0004ded8", "Staff of Ice Spikes (Destruction)"],
+    ["player.additem 00029b83", "Staff of Ice Storms (Destruction)"],
+    ["player.additem 0010fcf7", "Staff of Icy Spear (Destruction)"],
+    ["player.additem 0010fcf2", "Staff of Incineration (Destruction)"],
+    ["player.additem 000e5f43", "Staff of Jyrik Gauldurson (Destruction)"],
+    ["player.additem 0004dee3", "Staff of Lightning Bolts (Destruction)"],
+    ["player.additem 0004dee2", "Staff of Sparks (Destruction)"],
+    ["player.additem 00029b85", "Staff of the Flame Wall (Destruction)"],
+    ["player.additem 00029b86", "Staff of the Frost Wall (Destruction)"],
+    ["player.additem 00029b87", "Staff of the Storm Wall (Destruction)"],
+    ["player.additem 0010fcf4", "Staff of Thunderbolts (Destruction)"],
+    ["player.additem 00035369", "Staff of Magnus (Destruction)"],
+
+    // Illusion
+    ["player.additem 00046e0b", "Gadnor's Staff of Charming (Illusion)"],
+    ["player.additem 00029b91", "Grand Staff of Charming (Illusion)"],
+    ["player.additem 000ab704", "Halldir's Staff (Illusion)"],
+    ["player.additem 000940d8", "Staff of Arcane Authority (Illusion)"],
+    ["player.additem 00029b8b", "Staff of Calm (Illusion)"],
+    ["player.additem 00029b88", "Staff of Courage (Illusion)"],
+    ["player.additem 00029b8c", "Staff of Fear (Illusion)"],
+    ["player.additem 00029b8f", "Staff of Frenzy (Illusion)"],
+    ["player.additem 00029b89", "Staff of Fury (Illusion)"],
+    ["player.additem 00029b8e", "Staff of Inspiration (Illusion)"],
+    ["player.additem 0006a093", "Staff of Tandil (Illusion)"],
+    ["player.additem 00029b92", "Staff of Vanquishment (Illusion)"],
+
+    // Restoration
+    ["player.additem 00029b9b", "Grand Staff of Repulsion (Restoration)"],
+    ["player.additem 00029b97", "Grand Staff of Turning (Restoration)"],
+    ["player.additem 00029b94", "Minor Staff of Turning (Restoration)"],
+    ["player.additem 00029b99", "Staff of Mending (Restoration)"],
+    ["player.additem 00029b9a", "Staff of Repulsion (Restoration)"],
+    ["player.additem 00029b93", "Staff of the Healing Hand (Restoration)"],
+    ["player.additem 00029b95", "Staff of Turning (Restoration)"],
+
+    // Rare Staves
+    ["player.additem 0001CB36", "Sanguine Rose (Rare)"],
+    ["player.additem 00035066", "Skull of Corruption (Rare)"],
+    ["player.additem 000940D8", "Staff of Arcane Authority (Rare)"],
+    ["player.additem 0009B2B2", "Wabbajack (Rare)"]
+  ],
+  "Miscellaneous & Info": [    
+    ["[target].getavinfo [attribute]", "Show info about attribute on target/player"],
+    ["player.getavinfo lightarmor", "Show info about Light Armor on player"],    
+    ["help", "List console commands"],
+    ["help keyword X", "Search by keyword (X is search mode). Good for finding item IDs or NPC IDs"]
+  ],
+  "Weather IDs": [
+    ["setweather 0010fef8", "SovngardeDark – Sovngarde clouds"],
+    ["setweather 0010fe7e", "RiftenOvercastFog – Riften foggy, dark cloudy"],
+    ["setweather 0010e3d4", "EditorCloudPreview – Cloudy sky"],
+    ["setweather 0010e1f2", "SkyrimClear_A – Near cloudless, blue sky"],
+    ["setweather 0010e1f1", "SkyrimCloudy_A – Cloudy sky"],
+    ["setweather 0010e1f0", "SkyrimClearSN_A – Near cloudless, blue sky"],
+    ["setweather 0010e1ef", "SkyrimCloudySN_A – Cloudy sky"],
+    ["setweather 0010e1ee", "SkyrimClearTU_A – Near cloudless, blue sky"],
+    ["setweather 0010e1ed", "SkyrimCloudyTU_A – Cloudy sky"],
+    ["setweather 0010e1ec", "SkyrimClearFF_A – Near cloudless, blue sky"],
+    ["setweather 0010e1eb", "SkyrimCloudyFF_A – Cloudy sky"],
+    ["setweather 0010e1ea", "SkyrimClearRE_A – Cloudy sky"],
+    ["setweather 0010e1e9", "SkyrimCloudyRE_A – Cloudy sky"],
+    ["setweather 0010e1e8", "SkyrimClearCO_A – Cloudy sky"],
+    ["setweather 0010e1e7", "SkyrimCloudyCO_A – Dark cloudy sky"],
+    ["setweather 0010e1e6", "SkyrimClearMA_A – Cloudy sky"],
+    ["setweather 0010e1e5", "SkyrimCloudyMA_A – Dark cloudy sky"],
+    ["setweather 0010e1e4", "SkyrimClearVT_A – Cloudy sky"],
+    ["setweather 0010e1e3", "SkyrimCloudyVT_A – Cloudy sky"],
+    ["setweather 0010da13", "FXWthrInvertWfindowsWinterhold – Black/white contrast"],
+    ["setweather 0010d9ec", "SovngardeClear – Sovngarde clear sky"],
+    ["setweather 0010c32f", "FXSkyrimStormBlowingGrass – Storm, blowing grass"],
+    ["setweather 0010a7a8", "SkyrimCloudyVT – Cloudy sky"],
+    ["setweather 0010a7a7", "SkyrimFogVT – Cloudy sky with fog"],
+    ["setweather 0010a7a6", "SkyrimOvercastRainVT – Cloudy, fog, light rain"],
+    ["setweather 0010a7a5", "SkyrimClearVT – Cloudy sky"],
+    ["setweather 0010a245", "SkyrimCloudySN – Cloudy sky"],
+    ["setweather 0010a244", "SkyrimClearSN – Near cloudless, blue sky"],
+    ["setweather 0010a243", "SkyrimCloudyTU – Very cloudy sky"],
+    ["setweather 0010a242", "SkyrimOvercastRainTU – Cloudy, fog, light rain"],
+    ["setweather 0010a241", "SkyrimStormRainTU – Cloudy, fog, medium rain"],
+    ["setweather 0010A23C", "SkyrimStormRainFF – Cloudy, fog, medium rain"],
+    ["setweather 0010a240", "SkyrimClearTU – Near cloudless, blue sky"],
+    ["setweather 0010a23f", "SkyrimCloudyFF – Cloudy sky"],
+    ["setweather 0010a23e", "SkyrimFogFF – Cloudy, fog"],
+    ["setweather 0010a23d", "SkyrimOvercastRainFF – Cloudy, fog, light rain"],
+    ["setweather 0010a23b", "SkyrimClearFF – Near cloudless, blue sky"],
+    ["setweather 0010a23a", "SkyrimCloudyRE – Cloudy, fog"],
+    ["setweather 0010a239", "SkyrimFogRE – Cloudy, fog"],
+    ["setweather 0010a238", "SkyrimOvercastRainRE – Cloudy, fog, light rain"],
+    ["setweather 0010a237", "SkyrimClearRE – Cloudy sky"],
+    ["setweather 0010a236", "SkyrimCloudyCO – Very cloudy sky"],
+    ["setweather 0010a235", "SkyrimFogCO – Cloudy, fog"],
+    ["setweather 0010a234", "SkyrimClearCO – Near cloudless, blue sky"],
+    ["setweather 0010a233", "SkyrimCloudyMA – Cloudy sky"],
+    ["setweather 0010a232", "SkyrimFogMA – Cloudy, fog"],
+    ["setweather 0010a231", "SkyrimOvercastRainMA – Cloudy, fog, light rain"],
+    ["setweather 0010a230", "SkyrimClearMA – Near cloudless, blue sky"],
+    ["setweather 00106635", "KarthspireRedoubtFog – Karthspire fog"],
+    ["setweather 00105f40", "SkyrimDA02Weather – Cloudy, fog"],
+    ["setweather 00105945", "SolitudeBluePalaceFog – Cloudy, fog"],
+    ["setweather 00105944", "SolitudeBluePalaceFogNMARE – Cloudy, fog, reddish hue"],
+    ["setweather 00105943", "SolitudeBluePalaceFogFEAR – Cloudy, fog, green hue"],
+    ["setweather 00105942", "SolitudeBluePalaceFogARENA – Cloudy, fog, grey hue"],
+    ["setweather 00105941", "BloatedMansGrottoFog – Cloudy, fog, dark red hue"],
+    ["setweather 00104ab4", "SkuldafnCloudy – Cloudy, light snow"],
+    ["setweather 0010199f", "SkyrimMQ206weather – Cloudy, fog, dark red hue"],
+    ["setweather 00101910", "FXWthrInvertLightMarkarth – Almost no light"],
+    ["setweather 000ecc96", "FXWthrInvertWindowsWindhelm2 – Almost no light"],
+    ["setweather 000d9329", "HelgenAttackWeather – Cloudy sky"],
+    ["setweather 0005ed7a", "FXWthrInvertLightsSolitude – Almost no light"],
+    ["setweather 0008282a", "FXWthrInvertLightsWhiterun – Almost no light"],
+    ["setweather 0008277A", "FXWthrInvertWindowsWhiterun – Almost no light"],
+    ["setweather 000d4886", "FXMagicStormRain – Heavy thunderstorm"],
+    ["setweather 000d299e", "SkyrimOvercastWar – Cloudy sky"],
+    ["setweather 000c8221", "SkyrimStormSnow – Blizzard"],
+    ["setweather 000c8220", "SkyrimStormRain – Medium rain"],
+    ["setweather 000c821f", "SkyrimOvercastRain – Medium rain"],
+    ["setweather 000c821e", "SkyrimFog – Foggy"],
+    ["setweather 00075491", "FXWthrSunlightWhite – No sky"],
+    ["setweather 0007548f", "FXWthrSunlight – No sky"],
+    ["setweather 00048c14", "BlackreachWeather – Blackreach blue"],
+    ["setweather 000aee84", "FXWthrInvertWindowsWindhelm – Almost no light"],
+    ["setweather 000a6858", "WorldMapWeather – World map"],
+    ["setweather 000923fd", "SovngardeFog – Sovngarde fog"],
+    ["setweather 000777cf", "FXWthrInvertDayNighWarm – Almost no light"],
+    ["setweather 00075de5", "FXWthrCaveBluePaleLight – No sky, pale blue"],
+    ["setweather 0006ed5b", "FXWthrCaveBlueSkylight – No sky, blue"],
+    ["setweather 0006ed5a", "FXWthrInvertDayNight – Almost no light"],
+    ["setweather 0004d7fb", "SkyrimOvercastSnow – Heavy snow"],
+    ["setweather 0002e7ab", "TESTCloudyRain – Distorted, light rain"],
+    ["setweather 00012f89", "SkyrimCloudy – Cloudy sky"],
+    ["setweather 0000081a", "SkyrimClear – Near cloudless, blue sky"],
+    ["setweather 0000015e", "DefaultWeather – Cloudless, dark sky"]
+  ],
+  "AdvSkill One-Level Commands": [
+    ["advskill alchemy 506", "Raise Alchemy by one level"],
+    ["advskill alteration 132", "Raise Alteration by one level"],
+    ["advskill marksman 43", "Raise Archery by one level"],
+    ["advskill block 86", "Raise Block by one level"],
+    ["advskill conjuration 188", "Raise Conjuration by one level"],
+    ["advskill destruction 192", "Raise Destruction by one level"],
+    ["advskill heavyarmor 104", "Raise Heavy Armor by one level"],
+    ["advskill illusion 86", "Raise Illusion by one level"],
+    ["advskill lightarmor 173", "Raise Light Armor by one level"],
+    ["advskill lockpicking 7", "Raise Lockpicking by one level"],
+    ["advskill onehanded 110", "Raise One-Handed by one level"],
+    ["advskill pickpocket 3700", "Raise Pickpocket by one level"],
+    ["advskill restoration 197", "Raise Restoration by one level"],
+    ["advskill sneak 20", "Raise Sneak by one level"],
+    ["advskill speechcraft 1914", "Raise Speechcraft by one level"],
+    ["advskill twohanded 179", "Raise Two-Handed by one level"],
+    // Smithing and Enchanting - cautionary notes
+    ["advskill smithing 17", "Raises Smithing, but be extremely careful: value is approximate, experience varies by item value."],
+    ["advskill enchanting 3", "Raises Enchanting, but be careful: experience values vary widely and can cause large jumps."]
+  ],
+  
+  "Shout Teachword Commands": [
+    ["player.teachword 13E22", "FUS (Force) - Unrelenting Force"],
+    ["player.teachword 13E23", "RO (Balance) - Unrelenting Force"],
+    ["player.teachword 13E24", "DAH (Push) - Unrelenting Force"],
+    ["player.teachword 60294", "LAAS (Life) - Aura Whisper"],
+    ["player.teachword 60295", "YAH (Seek) - Aura Whisper"],
+    ["player.teachword 60296", "NIR (Hunt) - Aura Whisper"],
+    ["player.teachword 602A3", "IIZ (Ice) - Ice Form"],
+    ["player.teachword 602A4", "SLEN (Flesh) - Ice Form"],
+    ["player.teachword 602A5", "NUS (Statue) - Ice Form"],
+    ["player.teachword 6029A", "STRUN (Storm) - Storm Call"],
+    ["player.teachword 6029B", "BAH (Wrath) - Storm Call"],
+    ["player.teachword 6029C", "QO (Lightning) - Storm Call"],
+    ["player.teachword 20E17", "YOL (Fire) - Fire Breath"],
+    ["player.teachword 20E18", "TOOR (Inferno) - Fire Breath"],
+    ["player.teachword 20E19", "SHUL (Sun) - Fire Breath"],
+    ["player.teachword 48ACA", "TIID (Time) - Slow Time"],
+    ["player.teachword 48ACB", "KLO (Sand) - Slow Time"],
+    ["player.teachword 48ACC", "UL (Eternity) - Slow Time"],
+    ["player.teachword 2F7BB", "WULD (Whirlwind) - Whirlwind Sprint"],
+    ["player.teachword 2F7BC", "NAH (Fury) - Whirlwind Sprint"],
+    ["player.teachword 2F7BD", "KEST (Tempest) - Whirlwind Sprint"],
+    ["player.teachword 60291", "RAAN (Animal) - Animal Allegiance"],
+    ["player.teachword 60292", "MIR (Allegiance) - Animal Allegiance"],
+    ["player.teachword 60293", "TAH (Pack) - Animal Allegiance"],
+    ["player.teachword 3291D", "SU (Air) - Elemental Fury"],
+    ["player.teachword 3291E", "GRAH (Battle) - Elemental Fury"],
+    ["player.teachword 3291F", "DUN (Fury) - Elemental Fury"],
+    ["player.teachword 32917", "FEIM (Fade) - Become Ethereal"],
+    ["player.teachword 32918", "ZI (Spirit) - Become Ethereal"],
+    ["player.teachword 32919", "GRON (Bind) - Become Ethereal"],
+    ["player.teachword 5D16C", "FO (Frost) - Frost Breath"],
+    ["player.teachword 5D16D", "KRAH (Cold) - Frost Breath"],
+    ["player.teachword 5D16E", "DIIN (Freeze) - Frost Breath"],
+    ["player.teachword 602A0", "ZUL (Voice) - Throw Voice"],
+    ["player.teachword 602A1", "MEY (Fool) - Throw Voice"],
+    ["player.teachword 602A2", "GUT (Far) - Throw Voice"],
+    ["player.teachword 5FB95", "ZUN (Weapon) - Disarm"],
+    ["player.teachword 5FB96", "HAAL (Hand) - Disarm"],
+    ["player.teachword 5FB97", "VIIK (Defeat) - Disarm"],
+    ["player.teachword 3CD31", "LOK (Sky) - Clear Skies"],
+    ["player.teachword 3CD32", "VAH (Spring) - Clear Skies"],
+    ["player.teachword 3CD33", "KOOR (Summer) - Clear Skies"],
+    ["player.teachword 51960", "HUN (Hero) - Call of Valor"],
+    ["player.teachword 51961", "KAAR (Champion) - Call of Valor"],
+    ["player.teachword 51962", "ZOOL (Legend) - Call of Valor"],
+    ["player.teachword 44251", "JOOR (Mortal) - Dragonrend"],
+    ["player.teachword 44252", "ZAH (Finite) - Dragonrend"],
+    ["player.teachword 44253", "FRUL (Temporary) - Dragonrend"],
+    ["player.teachword 60297", "KRII (Kill) - Marked for Death"],
+    ["player.teachword 60298", "LUN (Leech) - Marked for Death"],
+    ["player.teachword 60299", "AUS (Suffer) - Marked for Death"],
+    ["player.teachword 46B89", "OD (Snow) - Call Dragon"],
+    ["player.teachword 46B8A", "AH (Hunter) - Call Dragon"],
+    ["player.teachword 46B8B", "VIING (Wing) - Call Dragon"],
+    ["player.teachword 6029D", "KAAN (Kyne) - Kyne's Peace"],
+    ["player.teachword 6029E", "DREM (Peace) - Kyne's Peace"],
+    ["player.teachword 6029F", "OV (Trust) - Kyne's Peace"],
+    ["player.teachword 3291A", "FAAS (Fear) - Dismay"],
+    ["player.teachword 3291B", "RU (Run) - Dismay"],
+    ["player.teachword 3291C", "MAAR (Terror) - Dismay"],
+    // Dawnguard Shout Codes
+    ["player.teachword xx007cb7", "Rii (Essence) - Soul Tear [Dawnguard]"],
+    ["player.teachword xx007cb8", "Vaaz (Tear) - Soul Tear [Dawnguard]"],
+    ["player.teachword xx007cb9", "Zol (Zombie) - Soul Tear [Dawnguard]"],
+    ["player.teachword xx0030d4", "Dur (Curse) - Summon Durnehviir [Dawnguard]"],
+    ["player.teachword xx0030d6", "Neh (Never) - Summon Durnehviir [Dawnguard]"],
+    ["player.teachword xx0030d7", "Viir (Dying) - Summon Durnehviir [Dawnguard]"],
+    ["player.teachword xx008a65", "Gaan (Stamina) - Drain Vitality [Dawnguard]"],
+    ["player.teachword xx008a64", "Lah (Magicka) - Drain Vitality [Dawnguard]"],
+    ["player.teachword xx008a63", "Haas (Health) - Drain Vitality [Dawnguard]"],
+    ["player.teachword xx01a162", "Diil (Undead) - Soul Cairn Summon [Dawnguard]"],
+    ["player.teachword xx01a163", "Qoth (Tomb) - Soul Cairn Summon [Dawnguard]"],
+    ["player.teachword xx01a164", "Zaam (Slave) - Soul Cairn Summon [Dawnguard]"],
+
+    // Dragonborn Shout Codes
+    ["player.teachword xx0200e4", "Mid (Loyal) - Battle Fury [Dragonborn]"],
+    ["player.teachword xx0200e5", "Vur (Valor) - Battle Fury [Dragonborn]"],
+    ["player.teachword xx0200e6", "Shaan (Inspire) - Battle Fury [Dragonborn]"],
+    ["player.teachword xx0179d9", "Gol (Earth) - Bend Will [Dragonborn]"],
+    ["player.teachword xx0179da", "Ha (Mind) - Bend Will [Dragonborn]"],
+    ["player.teachword xx0179db", "Dov (Dragon) - Bend Will [Dragonborn]"],
+    ["player.teachword xx0200c2", "Ven (Wind) - Cyclone [Dragonborn]"],
+    ["player.teachword xx0200c3", "Gar (Unleash) - Cyclone [Dragonborn]"],
+    ["player.teachword xx0200c4", "Nos (Strike) - Cyclone [Dragonborn]"],
+    ["player.teachword xx01df93", "Mul (Strength) - Dragon Aspect [Dragonborn]"],
+    ["player.teachword xx01df94", "Qah (Armor) - Dragon Aspect [Dragonborn]"],
+    ["player.teachword xx01df95", "Diiv (Wyrm) - Dragon Aspect [Dragonborn]"],
+
+    // Summon Spectral Clone
+    ["player.teachword 2F2CC", "Fiik (Mirror) - Summon Spectral Clone"],
+    ["player.teachword 2F2CD", "Lo (Deceive) - Summon Spectral Clone"],
+    ["player.teachword 2F2CE", "Sah (Phantom) - Summon Spectral Clone"]
+  ],
+  
+  "Spell Tome Commands": [
+    // Alteration
+    ["player.addspell 00043324", "Candlelight (Alteration)"],
+    ["player.addspell 0005AD5C", "Oakflesh (Alteration)"],
+    ["player.addspell 00043323", "Magelight (Alteration)"],
+    ["player.addspell 0005AD5D", "Stoneflesh (Alteration)"],
+    ["player.addspell xx017731", "Ash Shell (Alteration) [Dragonborn DLC]"],
+    ["player.addspell 000211EE", "Detect Life (Alteration)"],
+    ["player.addspell 00051B16", "Ironflesh (Alteration)"],
+    ["player.addspell 0001A4CC", "Telekinesis (Alteration)"],
+    ["player.addspell 00109111", "Transmute (Alteration)"],
+    ["player.addspell 0005D175", "Waterbreathing (Alteration)"],
+    ["player.addspell xx0177af", "Ash Rune (Alteration) [Dragonborn DLC]"],
+    ["player.addspell 000211EF", "Detect Dead (Alteration) [Dawnguard/Dragonborn DLC]"],
+    ["player.addspell 0005AD5E", "Ebonyflesh (Alteration)"],
+    ["player.addspell 0005AD5F", "Paralyze (Alteration)"],
+    ["player.addspell 000CDB70", "Dragonhide (Alteration)"],
+    ["player.addspell 000B62E6", "Mass Paralysis (Alteration)"],
+    ["player.addspell 000DA746", "Equilibrium (Alteration)"],
+
+    // Conjuration
+    ["player.addspell xx01ce06", "Bound Dagger (Conjuration) [Dragonborn DLC]"],
+    ["player.addspell 000211EB", "Bound Sword (Conjuration)"],
+    ["player.addspell 000640B6", "Conjure Familiar (Conjuration)"],
+    ["player.addspell 0007E8E1", "Raise Zombie (Conjuration)"],
+    ["player.addspell 000211EC", "Bound Battleaxe (Conjuration)"],
+    ["player.addspell xx0045ba", "Conjure Boneman (Conjuration) [Dawnguard DLC]"],
+    ["player.addspell 000204C3", "Conjure Flame Atronach (Conjuration)"],
+    ["player.addspell 0009CE26", "Flaming Familiar (Conjuration)"],
+    ["player.addspell 00065BD7", "Reanimate Corpse (Conjuration)"],
+    ["player.addspell 0004DBA4", "Soul Trap (Conjuration)"],
+    ["player.addspell xx00c600", "Summon Arvak (Conjuration) [Dawnguard DLC]"],
+    ["player.addspell 0006D22C", "Banish Daedra (Conjuration)"],
+    ["player.addspell 000211ED", "Bound Bow (Conjuration)"],
+    ["player.addspell xx01cdf6", "Conjure Ash Spawn (Conjuration) [Dragonborn DLC]"],
+    ["player.addspell 000204C4", "Conjure Frost Atronach (Conjuration)"],
+    ["player.addspell xx0045b8", "Conjure Mistman (Conjuration) [Dawnguard DLC]"],
+    ["player.addspell xx033c66", "Conjure Seeker (Conjuration) [Dragonborn DLC]"],
+    ["player.addspell 00096D94", "Revenant (Conjuration)"],
+    ["player.addspell xx017782", "Conjure Ash Guardian (Conjuration) [Dragonborn DLC]"],
+    ["player.addspell 0006F953", "Command Daedra (Conjuration)"],
+    ["player.addspell 0010FC16", "Conjure Dragon Priest (Conjuration)"],
+    ["player.addspell 0010DDEC", "Conjure Dremora Lord (Conjuration)"],
+    ["player.addspell 000204C5", "Conjure Storm Atronach (Conjuration)"],
+    ["player.addspell xx0045b3", "Conjure Wrathman (Conjuration) [Dawnguard DLC]"],
+    ["player.addspell 00096D95", "Dread Zombie (Conjuration)"],
+    ["player.addspell 0006F952", "Expel Daedra (Conjuration)"],
+    ["player.addspell 0007E5D5", "Flame Thrall (Conjuration)"],
+    ["player.addspell 0007E8DF", "Dead Thrall (Conjuration)"],
+    ["player.addspell 0007E5D6", "Frost Thrall (Conjuration)"],
+    ["player.addspell 0007E5D7", "Storm Thrall (Conjuration)"],
+    ["player.addspell 000AB23D", "Spectral Arrow (Conjuration)"],
+    ["player.addspell 0006A153", "Summon Arniel's Shade (Conjuration)"],
+    ["player.addspell 00099F39", "Summon Unbound Dremora (Conjuration)"],
+
+    // Destruction
+    ["player.addspell 00012FCD", "Flames (Destruction)"],
+    ["player.addspell 0002B96B", "Frostbite (Destruction)"],
+    ["player.addspell 0002DD2A", "Sparks (Destruction)"],
+    ["player.addspell 0005DB90", "Fire Rune (Destruction)"],
+    ["player.addspell 00012FD0", "Firebolt (Destruction)"],
+    ["player.addspell xx02732d", "Freeze (Destruction) [Dragonborn DLC]"],
+    ["player.addspell 0006796F", "Frost Rune (Destruction)"],
+    ["player.addspell 0002B96C", "Ice Spike (Destruction) [Dragonborn DLC]"],
+    ["player.addspell xx02732b", "Ignite (Destruction) [Dragonborn DLC]"],
+    ["player.addspell 0002DD29", "Lightning Bolt (Destruction)"],
+    ["player.addspell 00067970", "Lightning Rune (Destruction)"],
+    ["player.addspell 00045F9D", "Chain Lightning (Destruction)"],
+    ["player.addspell 0001C789", "Fireball (Destruction)"],
+    ["player.addspell 0003AE9F", "Flame Cloak (Destruction)"],
+    ["player.addspell 0003AEA2", "Frost Cloak (Destruction)"],
+    ["player.addspell 00045F9C", "Ice Storm (Destruction)"],
+    ["player.addspell 0003AEA3", "Lightning Cloak (Destruction)"],
+    ["player.addspell xx01772d", "Whirlwind Cloak (Destruction) [Dragonborn DLC]"],
+    ["player.addspell 0010F7EC", "Icy Spear (Destruction)"],
+    ["player.addspell 0010F7ED", "Incinerate (Destruction)"],
+    ["player.addspell 0010F7EE", "Thunderbolt (Destruction)"],
+    ["player.addspell 00035D7F", "Wall of Flames (Destruction)"],
+    ["player.addspell 00035D80", "Wall of Frost (Destruction)"],
+    ["player.addspell 00035D81", "Wall of Storms (Destruction)"],
+    ["player.addspell 0007E8E4", "Blizzard (Destruction)"],
+    ["player.addspell 0007A82B", "Fire Storm (Destruction)"],
+    ["player.addspell 0007E8E5", "Lightning Storm (Destruction)"],
+    ["player.addspell 0006A104", "Arniel's Convection (Destruction)"],
+    ["player.addspell 0008D5BF", "Vampiric Drain Level 1 (Destruction)"],
+    ["player.addspell 0008D5C0", "Vampiric Drain Level 2 (Destruction)"],
+    ["player.addspell 0008D5C1", "Vampiric Drain Level 3 (Destruction)"],
+    ["player.addspell 0008D5C2", "Vampiric Drain Level 4 (Destruction)"],
+
+    // Illusion
+    ["player.addspell 00021143", "Clairvoyance (Illusion)"],
+    ["player.addspell 0004DEE8", "Courage (Illusion)"],
+    ["player.addspell 0004DEEB", "Fury (Illusion)"],
+    ["player.addspell 0004DEE9", "Calm (Illusion)"],
+    ["player.addspell 0004DEEA", "Fear (Illusion)"],
+    ["player.addspell 0008F3EB", "Muffle (Illusion)"],
+    ["player.addspell 0004DEEE", "Frenzy (Illusion)"],
+    ["player.addspell xx0177b7", "Frenzy Rune (Illusion) [Dragonborn DLC]"],
+    ["player.addspell 0004DEEC", "Rally (Illusion)"],
+    ["player.addspell 00027EB6", "Invisibility (Illusion)"],
+    ["player.addspell 0004DEED", "Pacify (Illusion)"],
+    ["player.addspell 0004DEEF", "Rout (Illusion)"],
+    ["player.addspell 0007E8DD", "Call to Arms (Illusion)"],
+    ["player.addspell 0007E8DB", "Harmony (Illusion)"],
+    ["player.addspell 0007E8DE", "Hysteria (Illusion)"],
+    ["player.addspell 0007E8DA", "Mayhem (Illusion)"],
+    ["player.addspell 000B323E", "Vision of the Tenth Eye (Illusion)"],
+
+    // Restoration
+    ["player.addspell 00012FCC", "Healing (Restoration)"],
+    ["player.addspell 00013018", "Lesser Ward (Restoration)"],
+    ["player.addspell 0002F3B8", "Fast Healing (Restoration)"],
+    ["player.addspell 0004D3F2", "Healing Hands (Restoration)"],
+    ["player.addspell xx00e8d2", "Necromantic Healing (Restoration) [Dawnguard DLC]"],
+    ["player.addspell 000211F1", "Steadfast Ward (Restoration)"],
+    ["player.addspell xx003f52", "Sun Fire (Restoration) [Dawnguard DLC]"],
+    ["player.addspell 0004B146", "Turn Lesser Undead (Restoration)"],
+    ["player.addspell 000B62EF", "Close Wounds (Restoration)"],
+    ["player.addspell 000211F0", "Greater Ward (Restoration)"],
+    ["player.addspell 00012FD2", "Heal Other (Restoration)"],
+    ["player.addspell xx00e8d4", "Heal Undead (Restoration) [Dawnguard DLC]"],
+    ["player.addspell xx01d74b", "Poison Rune (Restoration) [Dragonborn DLC]"],
+    ["player.addspell 0004D3F8", "Repel Lesser Undead (Restoration)"],
+    ["player.addspell xx0038b5", "Stendarr's Aura (Restoration) [Dawnguard DLC]"],
+    ["player.addspell 0005DD5D", "Turn Undead (Restoration)"],
+    ["player.addspell xx0038b6", "Vampire's Bane (Restoration) [Dawnguard DLC]"],
+    ["player.addspell 0005312D", "Circle of Protection (Restoration)"],
+    ["player.addspell 000B62EE", "Grand Healing (Restoration)"],
+    ["player.addspell 0005DD60", "Repel Undead (Restoration)"],
+    ["player.addspell 0005DD5E", "Turn Greater Undead (Restoration)"],
+    ["player.addspell 0008C1AB", "Bane of the Undead (Restoration)"],
+    ["player.addspell 000E0CCF", "Guardian Circle (Restoration)"]
+  ],
+  
+  "Quick Select Fun Commands": [
+    ["player.placeatme 000FEA9B", "Spawn Elder Dragon"]
+  ],
+  "Weapon Enchantments": [
+    ["playerenchantobject <ObjectID> <Enchantment ID> <Enchantment ID>", "Enter the item ID, then enchant ID, then (optional) second enchant ID."],
+    ["000AA155", "Absorb Health"],
+    ["000AA156", "Absorb Magicka"],
+    ["000AA157", "Absorb Stamina"],
+    ["00101BDC", "Animal Damage"],
+    ["000ACBB5", "Banish"],
+    ["000173DC", "Banish - Damage Health"],
+    ["0006F6FC", "Chaurus Poison"],
+    ["0010582C", "Damage Health Bleeding"],
+    ["00091F7A", "Drain Health"],
+    ["00091F7E", "Drain Magicka"],
+    ["00091F7D", "Drain Stamina"],
+    ["000FF9F7", "Dragon Damage"],
+    ["000F1AC2", "Dragon DamageII"],
+    ["0010FAF1", "Ebony Blade Absorb Health"],
+    ["000F23F9", "Elf Slayer"],
+    ["0010582E", "Extra Damage Nord"],
+    ["00109D7C", "Falmer Poison"],
+    ["0005B451", "Fear(Low)"],
+    ["000BEE93", "Fear(Medium)"],
+    ["000BEE94", "Fear(High)"],
+    ["0004605A", "Fire Damage"],
+    ["00050CF6", "Fire Damage(High)"],
+    ["000FEFBC", "Fire Damage + Undead Explosion"],
+    ["0002ACD4", "Fire hazard(High)"],
+    ["0007A0FE", "Fortify Archery"],
+    ["0004605B", "Frost Damage"],
+    ["00078C11", "Frost Damage(High)"],
+    ["00106617", "Frost DamageII"],
+    ["000FB409", "Hag's End Drain Health"],
+    ["000FB407", "Hag's End Soul Trap"],
+    ["00105831", "Huntsman’s Prowess"],
+    ["0003E07B", "Ice Hazard(High)"],
+    ["000A26F5", "Ice Wraith Bite"],
+    ["00105834", "Ignore Armor Damage"],
+    ["00091AE5", "Instant Kill"],
+    ["0005B44F", "Magicka Damage"],
+    ["0003B0B1", "Moonlight Damage"],
+    ["001019AF", "Notched Pickaxe"],
+    ["001019D6", "Notched PickaxeII"],
+    ["000ACBB6", "Paralysis"],
+    ["00106616", "Paralyze"],
+    ["0006F702", "ParalyzeII"],
+    ["0009AA3F", "ParalyzeIII"],
+    ["000FB405", "Red Eagle Fire Damage"],
+    ["000FB408", "Red Eagle Turn Undead"],
+    ["0010CB93", "Restore Health"],
+    ["0004605C", "Shock Damage"],
+    ["00050CF9", "Shock Damage(High)"],
+    ["00045D5A", "Shock Hazard(High)"],
+    ["000549B4", "Dragon breath"],
+    ["0010B116", "Silvered"],
+    ["0005B452", "Soul Trap"],
+    ["00053473", "Spider Bite"],
+    ["000F23D3", "Spriggan Poison Damage"],
+    ["0005B450", "Stamina Damage"],
+    ["0005B46B", "Turn Undead"],
+    ["000F5D15", "Trolls Bane/Fire Damage"],
+    ["00016D46", "Unrelenting Force Strong"],
+    ["0010FC23", "Venomfang Poison"],
+    ["00105A01", "Windshear Bash Effect"],
+    ["001092A0", "Transmogrify"]
+  ],
+  "Armor Enchantments": [
+    ["playerenchantobject <ObjectID> <Enchantment ID> <Enchantment ID>", "Enter the item ID, then enchant ID, then (optional) second enchant ID."],
+    ["000FF15C", "Backstab"],
+    ["0010FC13", "Flame Cloak"],
+    ["00017120", "Fortify Armor Rating"],
+    ["0007A104", "Fortify Barter"],
+    ["0007A0F4", "Fortify Carry Weight"],
+    ["0010962F", "Fortify Conjuration"],
+    ["0010F814", "Fortify Health"],
+    ["0007A0FC", "Fortify Lockpicking"],
+    ["0003EAF8", "Fortify Magicka"],
+    ["00049504", "Fortify Magicka"],
+    ["0003EB28", "Fortify Restoration"],
+    ["0007A103", "Fortify Sneak"],
+    ["00109634", "Fortify Restoration"],
+    ["000946F3", "Health Regeneration"],
+    ["0010FC14", "Konahrik's Privilege"],
+    ["00092A57", "Muffle"],
+    ["0010F812", "Regenerate Health"],
+    ["00109630", "Regenerate Magicka"],
+    ["0003EB08", "Regenerate Stamina"],
+    ["0007A105", "Regenerate Stamina"],
+    ["000FF15E", "Resist Poison"],
+    ["00017121", "Shadowcloak of Nocturnal"],
+    ["00092A48", "Waterbreathing"]
+  ],
+  "Alchemy Perks": [
+    ["player.addperk 000BE127", "Alchemist Rank 1"],
+    ["player.addperk 000C07CA", "Alchemist Rank 2"],
+    ["player.addperk 000C07CB", "Alchemist Rank 3"],
+    ["player.addperk 000C07CC", "Alchemist Rank 4"],
+    ["player.addperk 000C07CD", "Alchemist Rank 5"],
+    ["player.addperk 00058215", "Physician"],
+    ["player.addperk 00058216", "Benefactor"],
+    ["player.addperk 00058217", "Poisoner"],
+    ["player.addperk 00058218", "Experimenter Rank 1"],
+    ["player.addperk 00105F2A", "Experimenter Rank 2"],
+    ["player.addperk 00105F2B", "Experimenter Rank 3"],
+    ["player.addperk 00105F2F", "Concentrated Poison"],
+    ["player.addperk 00105F2E", "Green Thumb"],
+    ["player.addperk 00105F2C", "Snakeblood"],
+    ["player.addperk 0005821D", "Purity"]
+  ],
+  "Alteration Perks": [
+    ["player.addperk 000F2CA6", "Novice Alteration"],
+    ["player.addperk 000C44B7", "Apprentice Alteration"],
+    ["player.addperk 000C44B8", "Adept Alteration"],
+    ["player.addperk 000C44B9", "Expert Alteration"],
+    ["player.addperk 000C44BA", "Master Alteration"],
+    ["player.addperk 000153CD", "Alteration Dual Casting"],
+    ["player.addperk 000D7999", "Mage Armor Rank 1"],
+    ["player.addperk 000D799A", "Mage Armor Rank 2"],
+    ["player.addperk 000D799B", "Mage Armor Rank 3"],
+    ["player.addperk 00053128", "Magic Resistance Rank1"],
+    ["player.addperk 00053129", "Magic Resistance Rank2"],
+    ["player.addperk 0005312A", "Magic Resistance Rank3"],
+    ["player.addperk 000581FC", "Stability"],
+    ["player.addperk 000581F7", "Atronach"]
+  ],
+  "Archery Perks": [
+    ["player.addperk 000BABED", "Overdraw Rank 1"],
+    ["player.addperk 0007934A", "Overdraw Rank 2"],
+    ["player.addperk 0007934B", "Overdraw Rank 3"],
+    ["player.addperk 0007934D", "Overdraw Rank 4"],
+    ["player.addperk 00079354", "Overdraw Rank 5"],
+    ["player.addperk 00058F61", "Eagle Eye"],
+    ["player.addperk 00105F1C", "Critical Shot Rank 1"],
+    ["player.addperk 00105F1E", "Critical Shot Rank 2"],
+    ["player.addperk 00105F1F", "Critical Shot Rank 3"],
+    ["player.addperk 00103ADA", "Steady Hand Rank 1"],
+    ["player.addperk 00103ADB", "Steady Hand Rank 2"],
+    ["player.addperk 00058F62", "Power Shot"],
+    ["player.addperk 00051B12", "Hunter's Discipline"],
+    ["player.addperk 00058F63", "Ranger"],
+    ["player.addperk 00105F19", "Quick Shot"],
+    ["player.addperk 00058F64", "Bullseye"]
+  ],
+  "Block Perks": [
+    ["player.addperk 000BCCAE", "Shield Wall Rank 1"],
+    ["player.addperk 00079355", "Shield Wall Rank 2"],
+    ["player.addperk 00079356", "Shield Wall Rank 3"],
+    ["player.addperk 00079357", "Shield Wall Rank 4"],
+    ["player.addperk 00079358", "Shield Wall Rank 5"],
+    ["player.addperk 000D8C33", "Quick Reflexes"],
+    ["player.addperk 00058F68", "Deflect Arrows"],
+    ["player.addperk 00058F67", "Power Bash"],
+    ["player.addperk 00058F69", "Elemental Protection"],
+    ["player.addperk 0005F594", "Deadly Bash"],
+    ["player.addperk 00058F66", "Disarming Bash"],
+    ["player.addperk 00058F6A", "Shield Charge"],
+    ["player.addperk 00106253", "Block Runner"]
+  ],
+  "Conjuration Perks": [
+    ["player.addperk 000F2CA7", "Novice Conjuration"],
+    ["player.addperk 000C44BB", "Apprentice Conjuration"],
+    ["player.addperk 000C44BC", "Adept Conjuration"],
+    ["player.addperk 000C44BD", "Expert Conjuration"],
+    ["player.addperk 000C44BE", "Master Conjuration"],
+    ["player.addperk 000153CE", "Conjuration Dual Casting"],
+    ["player.addperk 000640B3", "Mystic Binding"],
+    ["player.addperk 00105F30", "Summoner Rank 1"],
+    ["player.addperk 00105F31", "Summoner Rank 2"],
+    ["player.addperk 000D799E", "Soul Stealer"],
+    ["player.addperk 000D799C", "Oblivion Binding"],
+    ["player.addperk 000581DD", "Necromancy"],
+    ["player.addperk 000CB419", "Atromancy"],
+    ["player.addperk 000CB41A", "Elemental Potency"],
+    ["player.addperk 000581DE", "Dark Souls"],
+    ["player.addperk 000D5F1C", "Twin Souls"]
+  ],
+  "Destruction Perks": [
+    ["player.addperk 000F2CA8", "Novice Destruction"],
+    ["player.addperk 000C44BF", "Apprentice Destruction"],
+    ["player.addperk 000C44C0", "Adept Destruction"],
+    ["player.addperk 000C44C1", "Expert Destruction"],
+    ["player.addperk 000C44C2", "Master Destruction"],
+    ["player.addperk 000153CF", "Destruction Dual Casting"],
+    ["player.addperk 000153D2", "Impact"],
+    ["player.addperk 00105F32", "Rune Master"],
+    ["player.addperk 000581EA", "Augmented Frost Rank 1"],
+    ["player.addperk 0010FCF9", "Augmented Frost Rank 2"],
+    ["player.addperk 000581E7", "Augmented Flames Rank 1"],
+    ["player.addperk 0010FCF8", "Augmented Flames Rank 2"],
+    ["player.addperk 00058200", "Augmented Shock Rank 1"],
+    ["player.addperk 0010FCFA", "Augmented Shock Rank 2"],
+    ["player.addperk 000F3933", "Deep Freeze"],
+    ["player.addperk 000F3F0E", "Disintegrate"],
+    ["player.addperk 000F392E", "Intense Flames"]
+  ],
+  "Enchanting Perks": [
+    ["player.addperk 000BEE97", "Enchanter Rank 1"],
+    ["player.addperk 000C367C", "Enchanter Rank 2"],
+    ["player.addperk 000C367D", "Enchanter Rank 3"],
+    ["player.addperk 000C367E", "Enchanter Rank 4"],
+    ["player.addperk 000C367F", "Enchanter Rank 5"],
+    ["player.addperk 00058F7C", "Soul Squeezer"],
+    ["player.addperk 00058F80", "Fire Enchanter"],
+    ["player.addperk 00058F81", "Frost Enchanter"],
+    ["player.addperk 00108A44", "Soul Siphon"],
+    ["player.addperk 00058F7E", "Insightful Enchanter"],
+    ["player.addperk 00058F82", "Storm Enchanter"],
+    ["player.addperk 00058F7D", "Corpus Enchanter"],
+    ["player.addperk 00058F7F", "Extra Effect"]
+  ],
+  "Heavy Armor Perks": [
+    ["player.addperk 000BCD2A", "Juggernaut Rank 1"],
+    ["player.addperk 0007935E", "Juggernaut Rank 2"],
+    ["player.addperk 00079361", "Juggernaut Rank 3"],
+    ["player.addperk 00079362", "Juggernaut Rank 4"],
+    ["player.addperk 00079374", "Juggernaut Rank 5"],
+    ["player.addperk 00058F6F", "Well Fitted"],
+    ["player.addperk 00058F6C", "Tower of Strength"],
+    ["player.addperk 00107832", "Matching Set"],
+    ["player.addperk 00105F33", "Reflect Blows"],
+    ["player.addperk 00058F6E", "Fists Of Steel"],
+    ["player.addperk 000BCD2B", "Cushioned"],
+    ["player.addperk 00058F6D", "Conditioning"]
+  ],
+  "Illusion Perks": [
+    ["player.addperk 000F2CA9", "Novice Illusion"],
+    ["player.addperk 000153D0", "Illusion Dual Casting"],
+    ["player.addperk 000C44C3", "Apprentice Illusion"],
+    ["player.addperk 000C44C4", "Adept Illusion"],
+    ["player.addperk 000C44C5", "Expert Illusion"],
+    ["player.addperk 000C44C6", "Master Illusion"],
+    ["player.addperk 000581E1", "Animage"],
+    ["player.addperk 000581E2", "Kindred Mage"],
+    ["player.addperk 00059B77", "Hypnotic Gaze"],
+    ["player.addperk 00059B78", "Aspect Of Terror"],
+    ["player.addperk 000581FD", "Quiet Casting"],
+    ["player.addperk 000C44B5", "Rage"],
+    ["player.addperk 00059B76", "Master Of The Mind"]
+  ],
+  "Light Armor Perks": [
+    ["player.addperk 000BE123", "Agile Defender 1"],
+    ["player.addperk 00079376", "Agile Defender 2"],
+    ["player.addperk 00079389", "Agile Defender 3"],
+    ["player.addperk 00079391", "Agile Defender 4"],
+    ["player.addperk 00079392", "Agile Defender 5"],
+    ["player.addperk 00051B1B", "Custom Fit"],
+    ["player.addperk 00051B1C", "Unhindered"],
+    ["player.addperk 00105F22", "Wind Walker"],
+    ["player.addperk 00051B17", "Matching Set"],
+    ["player.addperk 00107831", "Deft Movement"]
+  ],
+  "Lockpicking Perks": [
+    ["player.addperk 000F392A", "Novice Locks"],
+    ["player.addperk 000BE125", "Apprentice Locks"],
+    ["player.addperk 00106259", "Quick hands"],
+    ["player.addperk 00107830", "Wax Key"],
+    ["player.addperk 000C3680", "Adept Locks"],
+    ["player.addperk 0005820A", "Golden Touch"],
+    ["player.addperk 00105F26", "Treasure Hunter"],
+    ["player.addperk 000C3681", "Expert Locks"],
+    ["player.addperk 00058208", "Locksmith"],
+    ["player.addperk 00058209", "Unbreakable"],
+    ["player.addperk 000C3682", "Master Locks"]
+  ],
+  "One-Handed Perks": [
+    ["player.addperk 000BABE4", "Armsman Rank 1"],
+    ["player.addperk 00079343", "Armsman Rank 2"],
+    ["player.addperk 00079342", "Armsman Rank 3"],
+    ["player.addperk 00079344", "Armsman Rank 4"],
+    ["player.addperk 00079345", "Armsman Rank 5"],
+    ["player.addperk 00052D50", "Fighting Stance"],
+    ["player.addperk 0003FFFA", "Hack and Slash Rank 1"],
+    ["player.addperk 000C3678", "Hack and Slash Rank 2"],
+    ["player.addperk 000C3679", "Hack and Slash Rank 3"],
+    ["player.addperk 0005F592", "Bone Breaker Rank 1"],
+    ["player.addperk 000C1E92", "Bone Breaker Rank 2"],
+    ["player.addperk 000C1E93", "Bone Breaker Rank 3"],
+    ["player.addperk 0005F56F", "Bladesman Rank 1"],
+    ["player.addperk 000C1E90", "Bladesman Rank 2"],
+    ["player.addperk 000C1E91", "Bladesman Rank 3"],
+    ["player.addperk 00106256", "Dual Flurry Rank 1"],
+    ["player.addperk 00106257", "Dual Flurry Rank 2"],
+    ["player.addperk 0003AF81", "Savage Strike"],
+    ["player.addperk 000CB406", "Critical Charge"],
+    ["player.addperk 00106258", "Dual Savagery"],
+    ["player.addperk 0003AFA6", "Paralyzing Strike"]
+  ],
+  "Pickpocket Perks": [
+    ["player.addperk 000BE124", "Light Fingers Rank 1"],
+    ["player.addperk 00018E6A", "Light Fingers Rank 2"],
+    ["player.addperk 00018E6B", "Light Fingers Rank 3"],
+    ["player.addperk 00018E6C", "Light Fingers Rank 4"],
+    ["player.addperk 00018E6D", "Light Fingers Rank 5"],
+    ["player.addperk 00058202", "Night Thief"],
+    ["player.addperk 00105F28", "Poisoned"],
+    ["player.addperk 00058204", "Cutpurse"],
+    ["player.addperk 000D79A0", "Keymaster"],
+    ["player.addperk 00096590", "Extra Pockets"],
+    ["player.addperk 00058201", "Misdirection"],
+    ["player.addperk 00058205", "Perfect Touch"]
+  ],
+  "Restoration Perks": [
+    ["player.addperk 000F2CAA", "Novice Restoration"],
+    ["player.addperk 000C44C7", "Apprentice Restoration"],
+    ["player.addperk 000C44C8", "Adept Restoration"],
+    ["player.addperk 000C44C9", "Expert Restoration"],
+    ["player.addperk 000C44CA", "Master Restoration"],
+    ["player.addperk 000153D1", "Restoration Dual Casting"],
+    ["player.addperk 000581F8", "Regeneration"],
+    ["player.addperk 000581F9", "Respite"],
+    ["player.addperk 000581F4", "Recovery Rank 1"],
+    ["player.addperk 000581F5", "Recovery Rank 2"],
+    ["player.addperk 000A3F64", "Avoid Death"],
+    ["player.addperk 000581E4", "Necromage"],
+    ["player.addperk 00068BCC", "Ward Absorb"]
+  ],
+  "Smithing Perks": [
+    ["player.addperk 000CB40D", "Steel Smithing"],
+    ["player.addperk 0005218E", "Arcane Blacksmith"],
+    ["player.addperk 000CB40F", "Elven Smithing"],
+    ["player.addperk 000CB414", "Advanced Armor"],
+    ["player.addperk 000CB411", "Glass Smithing"],
+    ["player.addperk 000CB40E", "Dwarven Smithing"],
+    ["player.addperk 000CB410", "Orcish Smithing"],
+    ["player.addperk 000CB412", "Ebony Smithing"],
+    ["player.addperk 000CB413", "Daedric Smithing"],
+    ["player.addperk 00052190", "Dragon Smithing"]
+  ],
+  "Sneak Perks": [
+    ["player.addperk 000BE126", "Stealth Rank 1"],
+    ["player.addperk 000C07C6", "Stealth Rank 2"],
+    ["player.addperk 000C07C7", "Stealth Rank 3"],
+    ["player.addperk 000C07C8", "Stealth Rank 4"],
+    ["player.addperk 000C07C9", "Stealth Rank 5"],
+    ["player.addperk 00058210", "Backstab"],
+    ["player.addperk 001036F0", "Deadly Aim"],
+    ["player.addperk 00058211", "Assassin's Blade"],
+    ["player.addperk 00058213", "Muffled Movement"],
+    ["player.addperk 0005820C", "Light Foot"],
+    ["player.addperk 00105F23", "Silent Roll"],
+    ["player.addperk 00105F24", "Silence"],
+    ["player.addperk 00058214", "Shadow Warrior"]
+  ],
+  "Speech Perks": [
+    ["player.addperk 000BE128", "Haggling Rank 1"],
+    ["player.addperk 000C07CE", "Haggling Rank 2"],
+    ["player.addperk 000C07CF", "Haggling Rank 3"],
+    ["player.addperk 000C07D0", "Haggling Rank 4"],
+    ["player.addperk 000C07D1", "Haggling Rank 5"],
+    ["player.addperk 00058F72", "Bribery"],
+    ["player.addperk 00058F75", "Allure"],
+    ["player.addperk 001090A2", "Persuasion"],
+    ["player.addperk 00058F7A", "Merchant"],
+    ["player.addperk 00058F7B", "Investor"],
+    ["player.addperk 00105F29", "Intimidation"],
+    ["player.addperk 00058F79", "Fence"],
+    ["player.addperk 001090A5", "Master Trader"]
+  ],
+  "Two-Handed Perks": [
+    ["player.addperk 000BABE8", "Barbarian Rank 1"],
+    ["player.addperk 00079346", "Barbarian Rank 2"],
+    ["player.addperk 00079347", "Barbarian Rank 3"],
+    ["player.addperk 00079348", "Barbarian Rank 4"],
+    ["player.addperk 00079349", "Barbarian Rank 5"],
+    ["player.addperk 00052D51", "Champion's Stance"],
+    ["player.addperk 000C5C05", "Limbsplitter Rank 1"],
+    ["player.addperk 000C5C06", "Limbsplitter Rank 2"],
+    ["player.addperk 000C5C07", "Limbsplitter Rank 3"],
+    ["player.addperk 0003AF83", "Deep Wounds Rank 1"],
+    ["player.addperk 000C1E94", "Deep Wounds Rank 2"],
+    ["player.addperk 000C1E95", "Deep Wounds Rank 3"],
+    ["player.addperk 0003AF84", "Skull Crusher Rank 1"],
+    ["player.addperk 000C1E96", "Skull Crusher Rank 2"],
+    ["player.addperk 000C1E97", "Skull Crusher Rank 3"],
+    ["player.addperk 00052D52", "Devastating Blow"],
+    ["player.addperk 000CB407", "Great Critical Charge"],
+    ["player.addperk 0003AF9E", "Sweep"],
+    ["player.addperk 0003AFA7", "Warmaster"]
+  ],
+  "Werewolf Perks": [
+    ["player.addperk xx0059a4", "Bestial Strength 1"],
+    ["player.addperk xx007a3f", "Bestial Strength 2"],
+    ["player.addperk xx011cfa", "Bestial Strength 3"],
+    ["player.addperk xx011cfb", "Bestial Strength 4"],
+    ["player.addperk xx0059a5", "Animal Vigor"],
+    ["player.addperk xx0059a7", "Gorging"],
+    ["player.addperk xx0059a6", "Savage Feeding"],
+    ["player.addperk xx0059a8", "Totem of Terror"],
+    ["player.addperk xx0059a9", "Totem of the Predator"],
+    ["player.addperk xx0059aa", "Totem of Ice Brothers"],
+    ["player.addperk xx0059ab", "Totem of the Moon"]
+  ],
+  "Vampire Lord Perks": [
+    ["player.addperk xx005998", "Power of the Grave"],
+    ["player.addperk xx00599a", "Vampiric Grip"],
+    ["player.addperk xx016908", "Summon Gargoyle"],
+    ["player.addperk xx008a70", "Corpse Curse"],
+    ["player.addperk xx00599b", "Detect All Creatures"],
+    ["player.addperk xx00599c", "Mist Form"],
+    ["player.addperk xx00599e", "Supernatural Reflexes"],
+    ["player.addperk xx005994", "Blood Healing"],
+    ["player.addperk xx005995", "Unearthly Will"],
+    ["player.addperk xx005996", "Poison Talons"],
+    ["player.addperk xx005997", "Night Cloak"]
+  ],  
+  
+};
+
+// --------- Navigation for sections -----------
+const nav = document.getElementById('nav-sections');
+const sectionIDs = [];
+Object.keys(sections).forEach(section => {
+  const id = section.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  sectionIDs.push(id);
+  const a = document.createElement('a');
+  a.href = `#${id}`;
+  a.textContent = section;
+  nav.appendChild(a);
+});
+
+const navToggle = document.getElementById('nav-toggle');
+
+// Hamburger menu logic
+function closeNavMenu() {
+  nav.classList.remove('open');
+  document.body.classList.remove('nav-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+}
+function openNavMenu() {
+  nav.classList.add('open');
+  document.body.classList.add('nav-open');
+  navToggle.setAttribute('aria-expanded', 'true');
+}
+navToggle.addEventListener('click', () => {
+  if (nav.classList.contains('open')) {
+    closeNavMenu();
+  } else {
+    openNavMenu();
+  }
+});
+nav.addEventListener('click', function(e) {
+  if (e.target.tagName === 'A' && window.innerWidth <= 600) {
+    closeNavMenu();
+  }
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 600) closeNavMenu();
+});
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.classList.contains('open')) closeNavMenu();
+});
+
+// --------- Command rendering -----------
+const container = document.getElementById("container");
+
+function createRow(cmd, label) {
+  const row = document.createElement("div");
+  row.className = "row";
+
+  const btn = document.createElement("button");
+  btn.className = "copy-btn";
+  btn.textContent = "Copy";
+  btn.onclick = () => copyText(cmd);
+
+  const input = document.createElement("input");
+  input.className = "cmd";
+  input.type = "text";
+  input.readOnly = true;
+  input.value = cmd;
+
+  const lbl = document.createElement("div");
+  lbl.className = "label";
+  lbl.textContent = label;
+
+  row.append(btn, input, lbl);
+  return row;
+}
+
+function showCopyNotification() {
+  const notif = document.getElementById('copy-notification');
+  notif.classList.add('show');
+  clearTimeout(notif._timeout);
+  notif._timeout = setTimeout(() => {
+    notif.classList.remove('show');
+  }, 1200);
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+  }
+  showCopyNotification();
+}
+
+// Render all sections and commands, add anchor ids for nav
+Object.entries(sections).forEach(([section, commands], i) => {
+  const id = sectionIDs[i];
+  const h2 = document.createElement("h2");
+  h2.textContent = section;
+  h2.id = id;
+  container.appendChild(h2);
+
+  commands.forEach(([cmd, label]) => {
+    container.appendChild(createRow(cmd, label));
+  });
+});
+
+// --------- Back to Top Button -----------
+const backToTopBtn = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 400) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+  // Update nav active link
+  let current = '';
+  const sectionElements = sectionIDs.map(id => document.getElementById(id));
+  const scrollPos = window.scrollY + 120;
+  sectionElements.forEach((el, idx) => {
+    if (el && el.offsetTop <= scrollPos) current = sectionIDs[idx];
+  });
+  Array.from(nav.children).forEach(a => {
+    if (a.getAttribute('href') === `#${current}`) {
+      a.classList.add('active');
+    } else {
+      a.classList.remove('active');
+    }
+  });
+});
+backToTopBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+// --------- Smooth scroll for nav links with offset -----------
+const NAV_OFFSET = 90;
+nav.addEventListener('click', function(e) {
+  if (e.target.tagName === 'A' && e.target.hash) {
+    const target = document.getElementById(e.target.hash.slice(1));
+    if (target) {
+      e.preventDefault();
+      window.scrollTo({
+        top: target.offsetTop - NAV_OFFSET,
+        behavior: 'smooth'
+      });
+    }
+  }
+});
+</script>
+</body>
+</html>
